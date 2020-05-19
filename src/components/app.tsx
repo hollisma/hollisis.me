@@ -1,6 +1,6 @@
 import React from 'react'
-import Basic from './Basic'
-import Layout from './Layout'
+import Basic from './basic'
+import Layout from './layout'
 
 const App: React.FC = () => {
   return (

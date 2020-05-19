@@ -1,23 +1,25 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import SEO from './seo'
 
 const Basic: React.FC<{}> = () => {
   const data = useStaticQuery(graphql`
     query BasicStaticQuery {
       site {
         siteMetadata {
-          name
+          title
           description
         }
       }
     }
   `)
 
-  const { name, description } = data.site.siteMetadata
+  const { title, description } = data.site.siteMetadata
 
   return (
     <div>
-      <h2>{name}</h2>
+      <SEO title='Basic' />
+      <h2>{title}</h2>
       <p>{description}</p>
     </div>
   )
