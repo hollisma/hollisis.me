@@ -1,6 +1,8 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyles, Theme } from '../styles'
 
-import './layout.scss'
+import Navbar from './navbar'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -8,10 +10,11 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div>
-      <h1>Header</h1>
+    <ThemeProvider theme={Theme}>
+      <GlobalStyles />
+      <Navbar />
       {children}
-    </div>
+    </ThemeProvider>
   )
 }
 

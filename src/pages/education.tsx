@@ -1,15 +1,14 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Home from '../components/home'
 
-const IndexPage: React.FC = () => {
+const Education: React.FC = () => {
   return (
     <Layout>
-      <SEO title='home' />
-      <Home />
+      <SEO title='Education' />
+      Educations!
     </Layout>
   )
 }
 
-export default IndexPage
+export default Education
