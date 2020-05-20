@@ -7,4 +7,4 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
-export { GlobalStyles }
+export default GlobalStyles
