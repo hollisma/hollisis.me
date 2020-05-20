@@ -26,6 +26,27 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/education`,
+        name: 'education',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/experience`,
+        name: 'experience',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projects`,
+        name: 'projects',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: siteTitle,
