@@ -16,21 +16,32 @@ type Data = {
           range: string
           order: number
         }
-        html: any
+        html: string
       }
-    }
+    }[]
   }
 }
 
 const Experience = ({ data }: PageProps<Data>) => {
-  // const nodes = data.allMarkdownRemark.edges
   const edges = data.allMarkdownRemark.edges
 
-  console.log(edges)
   return (
     <Layout>
       <SEO title='Experience' />
-      Lots of experience
+      {data &&
+        edges.map(({ node }, i) => {
+          const { frontmatter, html } = node
+          const { title, company, tech, range } = frontmatter
+          return (
+            <div key={i}>
+              <h1>{title}</h1>
+              <h2>{company}</h2>
+              <h3>{tech}</h3>
+              <h3>{range}</h3>
+              <div dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
+          )
+        })}
     </Layout>
   )
 }
