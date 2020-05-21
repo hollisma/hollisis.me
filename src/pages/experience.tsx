@@ -23,15 +23,16 @@ type Data = {
 }
 
 const Experience = ({ data }: PageProps<Data>) => {
-  const edges = data.allMarkdownRemark.edges
+  const { edges } = data.allMarkdownRemark
 
   return (
     <Layout>
       <SEO title='Experience' />
-      {data &&
+      {edges &&
         edges.map(({ node }, i) => {
           const { frontmatter, html } = node
           const { title, company, tech, range } = frontmatter
+
           return (
             <div key={i}>
               <h1>{title}</h1>

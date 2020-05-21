@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, PageProps } from 'gatsby'
+import { graphql, PageProps, Link } from 'gatsby'
 import styled from 'styled-components'
 import { Layout, SEO } from '../components'
 
@@ -12,8 +12,14 @@ type Data = {
   }
 }
 
-const Title = styled.h2<{ yes?: boolean }>`
-  color: ${props => (props.yes ? 'red' : 'blue')};
+// const Title = styled.h2<{ yes?: boolean }>`
+//   color: ${props => (props.yes ? 'red' : 'blue')};
+// `
+
+const StyledLink = styled(Link)`
+  display: block;
+  font-size: 24px;
+  padding: 25px;
 `
 
 const IndexPage = ({ data }: PageProps<Data>) => {
@@ -22,9 +28,10 @@ const IndexPage = ({ data }: PageProps<Data>) => {
   return (
     <Layout>
       <SEO title='home' />
-      <Title>{title}</Title>
-      <Title yes>{title}</Title>
       <p>{description}</p>
+      <StyledLink to='/education'>Education</StyledLink>
+      <StyledLink to='/experience'>Experience </StyledLink>
+      <StyledLink to='/projects'>Projects</StyledLink>
     </Layout>
   )
 }

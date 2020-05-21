@@ -28,7 +28,15 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow noopener noreferrer',
+            },
+          },
+        ],
       },
     },
     // {
@@ -45,13 +53,13 @@ module.exports = {
         name: 'experience',
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/projects`,
-    //     name: 'projects',
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projects`,
+        name: 'projects',
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
