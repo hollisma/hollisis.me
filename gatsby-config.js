@@ -26,12 +26,18 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        path: `${__dirname}/content/education`,
-        name: 'education',
+        plugins: [],
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/content/education`,
+    //     name: 'education',
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,13 +45,13 @@ module.exports = {
         name: 'experience',
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/projects`,
-        name: 'projects',
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/content/projects`,
+    //     name: 'projects',
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
