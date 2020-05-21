@@ -18,8 +18,10 @@ type Data = {
 
 const StyledLink = styled(Link)`
   display: block;
-  font-size: 24px;
+  background-color: lightblue;
+  margin: 10px;
   padding: 25px;
+  font-size: 24px;
 `
 
 const IndexPage = ({ data }: PageProps<Data>) => {

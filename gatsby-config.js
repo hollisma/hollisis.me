@@ -39,13 +39,13 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/education`,
-    //     name: 'education',
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/education`,
+        name: 'education',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,0 +1,1 @@
+I'm just over halfway done with studying computer science and math at Princeton. Here are some of the things I've learned:
