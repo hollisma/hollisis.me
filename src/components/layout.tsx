@@ -6,7 +6,7 @@ import Navbar from './navbar'
 
 const Container = styled.div`
   margin: 15vh 7vw 7vh;
-  padding: 10vh 10vw;
+  padding: 5vh 5vw;
   background-color: #afb;
   border-radius: 2vh;
 `

@@ -22,6 +22,8 @@ module.exports = {
     keywords: siteKeywords,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
@@ -58,6 +60,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/projects`,
         name: 'projects',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images',
       },
     },
     {
