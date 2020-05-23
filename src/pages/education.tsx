@@ -2,6 +2,17 @@ import React from 'react'
 import { graphql, PageProps } from 'gatsby'
 import { Layout, SEO } from '../components'
 
+interface Course {
+  fields: {
+    slug: string
+  }
+  frontmatter: {
+    title: string
+    term: string
+  }
+  html: string
+}
+
 type Data = {
   blurb: {
     blurb_edges: {
@@ -12,15 +23,7 @@ type Data = {
   }
   courses: {
     course_edges: {
-      node: {
-        fields: {
-          slug: string
-        }
-        frontmatter: {
-          title: string
-        }
-        html: string
-      }
+      node: Course
     }[]
   }
 }
@@ -30,26 +33,54 @@ const Education = ({ data }: PageProps<Data>) => {
   const { blurb_edges } = blurb
   const { course_edges } = courses
 
+  interface SectionObject {
+    [section: string]: Course[]
+  }
+  let section_to_course: SectionObject = {}
+  for (let i in course_edges) {
+    const course = course_edges[i].node
+    const section = course.fields.slug.split('/')[2]
+    if (!Object.keys(section_to_course).includes(section)) {
+      section_to_course[section] = []
+    }
+    section_to_course[section].push(course)
+  }
+  console.log(section_to_course)
+
+  const sectionElems =
+    Object.keys(section_to_course).length !== 0 &&
+    Object.keys(section_to_course).map((section, i) => {
+      // let CourseElems: React.ReactNode[] = []
+      let courseElems: React.ReactNode = section_to_course[section].map(
+        (sec, j) => {
+          const { frontmatter, html } = sec
+          const { title, term } = frontmatter
+
+          return (
+            <div key={j}>
+              <h2>{title}</h2>
+              <h3>{term}</h3>
+              <p dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
+          )
+        }
+      )
+
+      return (
+        <div key={i}>
+          <h1>{section}</h1>
+          {courseElems}
+        </div>
+      )
+    })
+
   return (
     <Layout>
       <SEO title='Education' />
       {blurb_edges && (
         <div dangerouslySetInnerHTML={{ __html: blurb_edges[0].node.html }} />
       )}
-      {course_edges &&
-        course_edges.map(({ node }, i) => {
-          const { fields, frontmatter, html } = node
-          const slug = fields.slug.split('/')[2]
-          const { title } = frontmatter
-
-          return (
-            <div key={i}>
-              <h2>{title}</h2>
-              <h3>{slug}</h3>
-              <p dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
-          )
-        })}
+      {sectionElems}
     </Layout>
   )
 }
@@ -78,6 +109,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            term
           }
           html
         }
