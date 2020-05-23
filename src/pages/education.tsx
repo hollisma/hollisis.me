@@ -45,7 +45,6 @@ const Education = ({ data }: PageProps<Data>) => {
     }
     section_to_course[section].push(course)
   }
-  console.log(section_to_course)
 
   const sectionElems =
     Object.keys(section_to_course).length !== 0 &&

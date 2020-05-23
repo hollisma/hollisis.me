@@ -1,14 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styled from 'styled-components'
 import { Link } from 'gatsby'
 
+const StyledLink = styled(Link)`
+  display: flex;
+  position: relative;
+  padding: 0 3vw;
+  height: 100%;
+  align-items: center;
+  font-size: 2.5vh;
+  text-decoration: none;
+  color: blue;
+  transition: all 0.2s ease;
+  -webkit-filter: brightness(100%);
+  &:hover {
+    -webkit-filter: brightness(85%);
+  }
+  p {
+    margin: 0;
+  }
+`
+
+const LinkContainer = styled.div<{ scrolled: boolean }>`
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: ${props => (props.scrolled ? '7.5vh' : '12.5vh')};
+  width: 100%;
+  background-color: ${props => (props.scrolled ? '#fab' : '#abf')};
+  align-items: center;
+  transition: all 0.2s ease-out;
+  ${StyledLink} {
+    background-color: ${props => (props.scrolled ? '#fab' : '#abf')};
+  }
+`
+
 const Navbar: React.FC = () => {
+  const [scrolled, setScrolled] = useState(
+    document.documentElement.scrollTop > 1
+  )
+
+  window.onscroll = () => {
+    setScrolled(document.documentElement.scrollTop > 1)
+  }
+
   return (
-    <div>
-      <Link to='/'>Home</Link>
-      <Link to='/education'>Education!</Link>
-      <Link to='/experience'>Experience!</Link>
-      <Link to='/projects'>Projects!</Link>
-    </div>
+    <LinkContainer scrolled={scrolled}>
+      <StyledLink to='/'>
+        <p>Home</p>
+      </StyledLink>
+      <StyledLink to='/education'>
+        <p>Education!</p>
+      </StyledLink>
+      <StyledLink to='/experience'>
+        <p>Experience!</p>
+      </StyledLink>
+      <StyledLink to='/projects'>
+        <p>Projects!</p>
+      </StyledLink>
+    </LinkContainer>
   )
 }
 
