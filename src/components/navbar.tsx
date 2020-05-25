@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
@@ -26,7 +26,7 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
-  height: ${props => (props.scrolled ? '4rem' : '5rem')};
+  height: ${props => (props.scrolled ? '3.5em' : '4.5em')};
   width: 100%;
   background-color: ${props => (props.scrolled ? '#fab' : '#abf')};
   align-items: center;
@@ -37,13 +37,13 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
 `
 
 const Navbar: React.FC = () => {
-  const [scrolled, setScrolled] = useState(
-    document.documentElement.scrollTop > 1
-  )
+  const [scrolled, setScrolled] = useState(false)
 
-  window.onscroll = () => {
-    setScrolled(document.documentElement.scrollTop > 1)
-  }
+  useEffect(() => {
+    window.onscroll = () => {
+      setScrolled(document.documentElement.scrollTop > 1)
+    }
+  })
 
   return (
     <LinkContainer scrolled={scrolled}>

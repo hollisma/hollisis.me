@@ -1,6 +1,26 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
+import styled from 'styled-components'
 import { Layout, SEO } from '../components'
+import { list_item } from '../styles'
+
+const Subject = styled.div`
+  margin-bottom: 3.5em;
+  &:last-child {
+    margin-bottom: 0.5em;
+  }
+`
+const Section = styled(list_item.section)`
+  margin-bottom: 1.5em;
+  padding: 1.5em 2.5em;
+`
+const Title = list_item.title
+const SecondTitle = styled(Title)`
+  font-size: 1.5em;
+`
+const UnderTitle = styled(list_item.under_title)`
+  padding-bottom: 0.5em;
+`
 
 interface Course {
   fields: {
@@ -36,42 +56,51 @@ const Education = ({ data }: PageProps<Data>) => {
   interface SectionObject {
     [section: string]: Course[]
   }
-  let section_to_course: SectionObject = {}
+
+  // section_to_courses maps a section name (math, cs, humanities)
+  // to the courses associated with the secctino in graphql form
+  let section_to_courses: SectionObject = {}
   for (let i in course_edges) {
     const course = course_edges[i].node
-    const section = course.fields.slug.split('/')[2]
-    if (!Object.keys(section_to_course).includes(section)) {
-      section_to_course[section] = []
+    const section = course.fields.slug.split('/')[2] // folder name
+    if (!Object.keys(section_to_courses).includes(section)) {
+      section_to_courses[section] = []
     }
-    section_to_course[section].push(course)
+    section_to_courses[section].push(course)
   }
 
   const sectionElems =
-    Object.keys(section_to_course).length !== 0 &&
-    Object.keys(section_to_course).map((section, i) => {
-      // let CourseElems: React.ReactNode[] = []
-      let courseElems: React.ReactNode = section_to_course[section].map(
+    Object.keys(section_to_courses).length !== 0 &&
+    Object.keys(section_to_courses).map((section, i) => {
+      let courseElems: React.ReactNode = section_to_courses[section].map(
         (sec, j) => {
           const { frontmatter, html } = sec
           const { title, term } = frontmatter
 
           return (
-            <div key={j}>
-              <h2>{title}</h2>
-              <h3>{term}</h3>
+            <Section key={j}>
+              <SecondTitle>{title}</SecondTitle>
+              <UnderTitle>{term}</UnderTitle>
               <p dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
+            </Section>
           )
         }
       )
 
       return (
-        <div key={i}>
-          <h1>{section}</h1>
+        <Subject key={i}>
+          <Title>{section}</Title>
           {courseElems}
-        </div>
+        </Subject>
       )
     })
+
+  // Hard coding the order to be CS, math, humanities
+  if (sectionElems) {
+    const temp = sectionElems[1]
+    sectionElems[1] = sectionElems[2]
+    sectionElems[2] = temp
+  }
 
   return (
     <Layout>

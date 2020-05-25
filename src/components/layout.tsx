@@ -11,11 +11,11 @@ import Navbar from './navbar'
 // `}
 
 const Container = styled.div`
-  max-width: 800px;
-  margin: 7.5em auto 7vh;
+  width: auto;
+  max-width: 50em;
+  margin: 7em auto 4em;
   ${media(900)`
     margin-top: 5em;
-    width: 100%;
   `}
   padding: 2em 5vw;
   background-color: #afb;

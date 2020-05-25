@@ -6,31 +6,33 @@ import { Layout, SEO } from '../components'
 type Data = {
   site: {
     siteMetadata: {
-      title: string
       description: string
     }
   }
 }
 
-// const Title = styled.h2<{ yes?: boolean }>`
-//   color: ${props => (props.yes ? 'red' : 'blue')};
-// `
+const Header = styled.h1`
+  font-size: 2.5em;
+`
 
 const StyledLink = styled(Link)`
   display: block;
   background-color: lightblue;
-  margin: 10px;
+  margin: 1em 0;
   padding: 25px;
   font-size: 24px;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: #f48;
 `
 
-const IndexPage = ({ data }: PageProps<Data>) => {
-  const { title, description } = data.site.siteMetadata
+const HomePage = ({ data }: PageProps<Data>) => {
+  const { description } = data.site.siteMetadata
 
   return (
     <Layout>
       <SEO title='home' />
-      <p>{description}</p>
+      <Header>{description} :)</Header>
       <StyledLink to='/education'>Education</StyledLink>
       <StyledLink to='/experience'>Experience </StyledLink>
       <StyledLink to='/projects'>Projects</StyledLink>
@@ -38,13 +40,12 @@ const IndexPage = ({ data }: PageProps<Data>) => {
   )
 }
 
-export default IndexPage
+export default HomePage
 
 export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title
         description
       }
     }

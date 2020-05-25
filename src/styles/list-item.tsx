@@ -4,8 +4,9 @@ const list_item = {
   section: styled.div`
     display: flex;
     flex-direction: column;
+    width: 87.5%;
     background-color: #fea;
-    padding: 5vh 7%;
+    padding: 2em 3em;
     margin-bottom: 5vh;
     border-radius: 2em;
     &:last-of-type {
@@ -18,7 +19,6 @@ const list_item = {
   `,
   title: styled.h1`
     font-size: 2rem;
-    margin-top: 0.75rem;
   `,
   under_title: styled.div`
     display: flex;
@@ -32,6 +32,9 @@ const list_item = {
     & li {
       margin-bottom: 0.4rem;
       font-size: 1.1rem;
+    }
+    & li:last-child {
+      margin-bottom: 0;
     }
   `,
   flex_row_container: styled.div`
