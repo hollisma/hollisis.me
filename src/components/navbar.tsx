@@ -8,7 +8,7 @@ const StyledLink = styled(Link)`
   padding: 0 3vw;
   height: 100%;
   align-items: center;
-  font-size: 2.5vh;
+  font-size: 1.25rem;
   text-decoration: none;
   color: blue;
   transition: all 0.2s ease;
@@ -26,7 +26,7 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
-  height: ${props => (props.scrolled ? '7.5vh' : '12.5vh')};
+  height: ${props => (props.scrolled ? '4rem' : '5rem')};
   width: 100%;
   background-color: ${props => (props.scrolled ? '#fab' : '#abf')};
   align-items: center;

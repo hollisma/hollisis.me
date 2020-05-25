@@ -1,6 +1,41 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
-import { Layout, SEO } from '../components'
+import styled from 'styled-components'
+import { Layout, SEO, Icon } from '../components'
+import list_item from '../styles/list-item'
+
+const Section = list_item.section
+
+const TitleSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+`
+const Title = list_item.title
+
+const UnderTitle = list_item.under_title
+const Description = list_item.description
+
+const QuickInfo = list_item.flex_row_container
+const MiniDescription = list_item.left_item
+const Tech = list_item.right_item
+const Vert = list_item.vert_bar
+const Links = styled.div`
+  display: flex;
+  flex-direction: row;
+  svg: {
+    height: 50px;
+    width: 50px;
+  }
+`
+const IconLink = styled.a`
+  padding: 5px;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+`
 
 type Data = {
   allMarkdownRemark: {
@@ -34,32 +69,39 @@ const Projects = ({ data }: PageProps<Data>) => {
           const { title, description, github, external, tech } = frontmatter
 
           return (
-            <div key={i}>
-              <h1>{title}</h1>
-              <h2>{description}</h2>
-              <h3>{tech}</h3>
-              <div>
-                {github && (
-                  <a
-                    href={github}
-                    target='_blank'
-                    rel='nofollow noopener noreferrer'
-                  >
-                    Github Link
-                  </a>
-                )}
-                {external && (
-                  <a
-                    href={external}
-                    target='_blank'
-                    rel='nofollow noopener noreferrer'
-                  >
-                    Check it out!
-                  </a>
-                )}
-              </div>
-              <div dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
+            <Section key={i}>
+              <TitleSection>
+                <Title>{title}</Title>
+                <Links>
+                  {github && (
+                    <IconLink
+                      href={github}
+                      target='_blank'
+                      rel='nofollow noopener noreferrer'
+                    >
+                      <Icon name='github' />
+                    </IconLink>
+                  )}
+                  {external && (
+                    <IconLink
+                      href={external}
+                      target='_blank'
+                      rel='nofollow noopener noreferrer'
+                    >
+                      <Icon name='external' />
+                    </IconLink>
+                  )}
+                </Links>
+              </TitleSection>
+              <UnderTitle>
+                <QuickInfo>
+                  <MiniDescription>{description}</MiniDescription>
+                  <Vert>|</Vert>
+                  <Tech>{tech}</Tech>
+                </QuickInfo>
+              </UnderTitle>
+              <Description dangerouslySetInnerHTML={{ __html: html }} />
+            </Section>
           )
         })}
     </Layout>
