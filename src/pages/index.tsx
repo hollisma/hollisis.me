@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, PageProps, Link } from 'gatsby'
 import styled from 'styled-components'
 import { Layout, SEO } from '../components'
+import { navLinks } from '../config'
 
 type Data = {
   site: {
@@ -33,9 +34,10 @@ const HomePage = ({ data }: PageProps<Data>) => {
     <Layout>
       <SEO title='home' />
       <Header>{description} :)</Header>
-      <StyledLink to='/education'>Education</StyledLink>
-      <StyledLink to='/experience'>Experience </StyledLink>
-      <StyledLink to='/projects'>Projects</StyledLink>
+      {navLinks.map(
+        ({ name, url }) =>
+          name !== 'Home' && <StyledLink to={url}>{name}</StyledLink>
+      )}
     </Layout>
   )
 }

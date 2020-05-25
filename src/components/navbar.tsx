@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import { navLinks } from '../config'
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -47,18 +48,11 @@ const Navbar: React.FC = () => {
 
   return (
     <LinkContainer scrolled={scrolled}>
-      <StyledLink to='/'>
-        <p>Home</p>
-      </StyledLink>
-      <StyledLink to='/education'>
-        <p>Education!</p>
-      </StyledLink>
-      <StyledLink to='/experience'>
-        <p>Experience!</p>
-      </StyledLink>
-      <StyledLink to='/projects'>
-        <p>Projects!</p>
-      </StyledLink>
+      {navLinks.map(({ name, url }) => (
+        <StyledLink to={url}>
+          <p>{name}</p>
+        </StyledLink>
+      ))}
     </LinkContainer>
   )
 }

@@ -1,25 +1,13 @@
-const siteTitle = `hollis-ma-personal-website`
-const siteDescription = 'Personal website for Hollis Ma'
-const siteAuthor = `@hollisma`
-const siteUrl = ``
-const siteImage = `${siteUrl}/icons/icon.png`
-const siteKeywords = [
-  'student',
-  'princeton',
-  'gatsby',
-  'typescript',
-  'javascript',
-  'react',
-]
+const config = require('./src/config.js')
 
 module.exports = {
   siteMetadata: {
-    title: siteTitle,
-    description: siteDescription,
-    author: siteAuthor,
-    url: siteUrl,
-    image: siteImage,
-    keywords: siteKeywords,
+    title: config.siteTitle,
+    description: config.siteDescription,
+    author: config.siteAuthor,
+    url: config.siteUrl,
+    image: `${config.siteUrl}/icons/icon.png`,
+    keywords: config.siteKeywords,
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -72,9 +60,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: siteTitle,
-        short_name: siteTitle,
-        description: siteDescription,
+        name: config.siteTitle,
+        short_name: config.siteTitle,
+        description: config.siteDescription,
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
