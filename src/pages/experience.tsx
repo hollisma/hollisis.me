@@ -27,6 +27,22 @@ const Skills = styled.div`
 const Languages = styled.p``
 const Technologies = styled.p``
 
+const Resume = styled.a`
+  position: relative;
+  top: 2em;
+  right: 1em;
+  float: right;
+  background-color: #4c4;
+  padding: 1em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  &:hover {
+    filter: brightness(90%);
+  }
+`
+
 type Data = {
   experiences: {
     edges: {
@@ -79,6 +95,13 @@ const Experience = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location}>
       <SEO title='Hollis Ma | Experience' />
+      <Resume
+        href='./Resume.pdf'
+        target='_blank'
+        rel='nofollow noopener noreferrer'
+      >
+        Resume
+      </Resume>
       <Skills>
         <Languages>
           <b>Languages: </b>

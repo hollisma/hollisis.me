@@ -56,11 +56,20 @@ const Navbar = ({ location }: any) => {
 
   return (
     <LinkContainer scrolled={scrolled}>
-      {navLinks.map(({ name, url }) => (
-        <StyledLink to={url} key={name} current={(url === pathname).toString()}>
-          <p>{name}</p>
-        </StyledLink>
-      ))}
+      {navLinks.map(({ name, url }) => {
+        const urlSub = url.split('/')[1]
+        const pathSub = pathname.split('/')[1]
+
+        return (
+          <StyledLink
+            to={url}
+            key={name}
+            current={(urlSub === pathSub).toString()}
+          >
+            <p>{name}</p>
+          </StyledLink>
+        )
+      })}
     </LinkContainer>
   )
 }

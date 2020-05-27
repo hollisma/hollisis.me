@@ -18,7 +18,7 @@ const StyledDate = styled.h3`
   margin-top: 0.25em;
 `
 const Post = styled.div`
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 1.25em;
   list-style-position: inside;
   line-height: 1.75em;
@@ -41,6 +41,8 @@ const StyledLink = styled(Link)`
   padding: 0.75em;
   border-radius: 0.5em;
   font-weight: bold;
+  font-size: 1.1em;
+  max-width: 300px;
 `
 const ForwardLink = styled(StyledLink)`
   float: right;
@@ -99,7 +101,9 @@ const Blog = ({ data, pageContext, location }: Props) => {
 
   const dateObj = new Date(date)
   const dateArr = dateObj.toString().split(' ')
-  const dateStr = `${dateArr[1]} ${dateArr[2]}, ${dateArr[3]}`
+  const dateStr = `${dateArr[1]} ${Number(dateArr[2]) + 1}, ${dateArr[3]}`
+
+  const sub = location.pathname.split('/')[1]
 
   return (
     <Layout location={location}>
@@ -111,12 +115,12 @@ const Blog = ({ data, pageContext, location }: Props) => {
       </Section>
       <LinkSection>
         {previous && (
-          <StyledLink to={previous.fields!.slug!}>
+          <StyledLink to={`${sub}${previous.fields!.slug!}`}>
             <LeftArrow /> {previous.frontmatter!.title!}
           </StyledLink>
         )}
         {next && (
-          <ForwardLink to={next.fields!.slug!}>
+          <ForwardLink to={`${sub}${next.fields!.slug!}`}>
             {next.frontmatter!.title!} <RightArrow />
           </ForwardLink>
         )}
@@ -128,8 +132,8 @@ const Blog = ({ data, pageContext, location }: Props) => {
 export default Blog
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(fields: { slug: { eq: $path } }) {
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug
       }

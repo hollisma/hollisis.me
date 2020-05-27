@@ -1,6 +1,6 @@
 ---
 title: Hey Look a Blog!
-date: '2020-05-26'
+date: '2020-05-27'
 ---
 
 This is a blog post. For the longest time, I've wanted to write one of these in my very own blog. 
@@ -18,15 +18,15 @@ wherever else they find themselves after they're flung from the storm in my brai
 process for becoming one of my core thoughts is quite inefficient — it mainly consists of a 
 lottery to get chosen, then getting thrown into a messy room full of other thoughts with mold 
 stretching from thought to thought. Blogging will hopefully become a way of carefully selecting 
-which thoughts I want to cultivate and gently planting them into my brain so that they can grow 
+which thoughts I want to cultivate and gently plant them into my brain so that they can grow 
 healthily. After all, I'm pretty sure my consciousness is just grape vines tangled together to 
 resemble an organized spec of existence, so I want to enjoy the highest quality grapes while 
 they're here. Blogging is also an outlet for my wacky, convoluted analogies so I apologize if 
 they're hard to understand; hopefully I'll get better at them. 
 
-> To summarize in normal English, blogging provides a place for me to jot down my thoughts and 
-> clearly articulate them, hopefully helping me to understand and improve myself, and also my 
-> existential angst. 
+To summarize in normal English, blogging provides a place for me to jot down my thoughts and 
+clearly articulate them, hopefully helping me to understand and improve myself, as well as my 
+existential angst. 
 
 That was a super general statement, so here are some more specifics. 
 
@@ -44,7 +44,7 @@ the internet.
 monitoring and accelerating my improvement. Being better than the me that wrote that previous 
 sentence is a pursuit that is one of the most fulfilling things in my life, and blogging will 
 encourage me to introspect and analyze my life with more passion and fewer biases.
-- Finally, I suck at writing. Just getting to this point has taken a couple years. The writing 
+- Finally, I suck at writing. Just getting to this paragraph has taken a couple years. The writing 
 part has taken a little less time, but as the failed attempt of that joke has shown, I have a lot 
 of room to improve in conveying my thoughts and writing good English. Also, imo communication is 
 one of the most important and underrated skills in modern society, so I hope to get better at it.

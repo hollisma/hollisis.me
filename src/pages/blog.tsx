@@ -34,7 +34,6 @@ type Data = {
           title: string
         }
         excerpt: string
-        html: string
       }
     }[]
   }
@@ -42,19 +41,20 @@ type Data = {
 
 const Blog = ({ data, location }: PageProps<Data>) => {
   const { posts } = data.postsQuery
-  console.log(posts)
 
   return (
     <Layout location={location}>
       <SEO title='Hollis Ma | Blog' />
       {posts &&
         posts.map(({ node }, i) => {
-          const { fields, frontmatter, excerpt, html } = node
+          const { fields, frontmatter, excerpt } = node
           const { title } = frontmatter
 
           return (
             <Section key={i}>
-              <BlogLink to={fields!.slug}>{title}</BlogLink>
+              <BlogLink to={`${location.pathname}${fields!.slug}`}>
+                {title}
+              </BlogLink>
               <Post>{excerpt}</Post>
             </Section>
           )
@@ -80,7 +80,6 @@ export const pageQuery = graphql`
             title
           }
           excerpt(pruneLength: 200)
-          html
         }
       }
     }

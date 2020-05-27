@@ -11,7 +11,6 @@ type Data = {
 }
 
 const Test = ({ data }: PageProps<Data>) => {
-  console.log(data)
   return <div>hi</div>
 }
 
