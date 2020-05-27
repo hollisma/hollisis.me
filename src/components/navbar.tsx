@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
 import { navLinks } from '../config'
 
-const StyledLink = styled(Link)<{ current: boolean }>`
+const StyledLink = styled(Link)<{ current: string }>`
   display: flex;
   position: relative;
   padding: 0 3vw;
@@ -15,7 +15,7 @@ const StyledLink = styled(Link)<{ current: boolean }>`
   transition: all 0.2s ease;
   background-color: #abf;
   ${props =>
-    props.current
+    props.current === 'true'
       ? css`
           background: #8a97c9 !important;
           color: #00b;
@@ -51,16 +51,12 @@ const Navbar = ({ location }: any) => {
     }
   })
 
-  const current = location && location.pathname.split('/')[1]
+  const pathname = location && location.pathname
 
   return (
     <LinkContainer scrolled={scrolled}>
       {navLinks.map(({ name, url }) => (
-        <StyledLink
-          to={url}
-          key={name}
-          current={name.toLowerCase() === current}
-        >
+        <StyledLink to={url} key={name} current={(url === pathname).toString()}>
           <p>{name}</p>
         </StyledLink>
       ))}
