@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
 import styled from 'styled-components'
-import { Layout, SEO } from '../components'
+import { Layout, SEO, Icon } from '../components'
 import { list_item } from '../styles'
 
 const Subject = styled.div`
@@ -15,11 +15,30 @@ const Section = styled(list_item.section)`
   padding: 1.5em 2.5em;
 `
 const Title = list_item.title
+
+const SecondTitleSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
 const SecondTitle = styled(Title)`
   font-size: 1.5em;
 `
 const UnderTitle = styled(list_item.under_title)`
   padding-bottom: 0.5em;
+`
+const IconLink = styled.a`
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+`
+const Description = styled.p`
+  a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+  }
 `
 
 interface Course {
@@ -29,6 +48,7 @@ interface Course {
   frontmatter: {
     title: string
     term: string
+    link: string
   }
   html: string
 }
@@ -75,13 +95,24 @@ const Education = ({ data }: PageProps<Data>) => {
       let courseElems: React.ReactNode = section_to_courses[section].map(
         (sec, j) => {
           const { frontmatter, html } = sec
-          const { title, term } = frontmatter
+          const { title, term, link } = frontmatter
 
           return (
             <Section key={j}>
-              <SecondTitle>{title}</SecondTitle>
+              <SecondTitleSection>
+                <SecondTitle>{title}</SecondTitle>
+                {link && (
+                  <IconLink
+                    href={link}
+                    target='_blank'
+                    rel='nofollow noopener noreferrer'
+                  >
+                    <Icon name='external' />
+                  </IconLink>
+                )}
+              </SecondTitleSection>
               <UnderTitle>{term}</UnderTitle>
-              <p dangerouslySetInnerHTML={{ __html: html }} />
+              <Description dangerouslySetInnerHTML={{ __html: html }} />
             </Section>
           )
         }
@@ -104,7 +135,7 @@ const Education = ({ data }: PageProps<Data>) => {
 
   return (
     <Layout>
-      <SEO title='Education' />
+      <SEO title='Hollis Ma | Education' />
       <div dangerouslySetInnerHTML={{ __html: blurb_edges![0].node.html }} />
       {sectionElems}
     </Layout>
@@ -136,6 +167,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             term
+            link
           }
           html
         }

@@ -4,7 +4,12 @@ import styled from 'styled-components'
 import { Layout, SEO } from '../components'
 import { list_item } from '../styles'
 
-const Section = list_item.section
+const Section = styled(list_item.section)`
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #ed9;
+  }
+`
 const BlogLink = styled(Link)`
   font-size: 2em;
   font-weight: bold;
@@ -37,7 +42,7 @@ const Blog = ({ data }: PageProps<Data>) => {
 
   return (
     <Layout>
-      <SEO title='Blog' />
+      <SEO title='Hollis Ma | Blog' />
       {posts &&
         posts.map(({ node }, i) => {
           const { fields, frontmatter, html } = node

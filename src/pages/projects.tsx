@@ -62,7 +62,7 @@ const Projects = ({ data }: PageProps<Data>) => {
 
   return (
     <Layout>
-      <SEO title='Projects' />
+      <SEO title='Hollis Ma | Projects' />
       {edges &&
         edges.map(({ node }, i) => {
           const { frontmatter, html } = node

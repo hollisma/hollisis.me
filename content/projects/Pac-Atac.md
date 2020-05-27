@@ -1,8 +1,8 @@
 ---
 title: Pac-Atac
 description: 2.5D Shooter
-github: 'https://github.com/MichaelF49/Pacman3D'
-external: 'https://github.com/hollisma/Pac-Atac'
+github: 'https://github.com/hollisma/Pac-Atac'
+external: 'https://michaelf49.github.io/Pacman3D/'
 tech: JavaScript, Three.js, React
 order: 1
 ---

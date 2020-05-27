@@ -19,6 +19,14 @@ const Range = styled.h3`
   font-style: italic;
 `
 
+const Skills = styled.div`
+  margin: 2em 1.5em;
+  font-size: 1.25em;
+  line-height: 1.25em;
+`
+const Languages = styled.p``
+const Technologies = styled.p``
+
 type Data = {
   experiences: {
     edges: {
@@ -31,7 +39,7 @@ type Data = {
           company: string
           tech: string
           range: string
-          order: number
+          languages: string
         }
         html: string
       }
@@ -41,29 +49,47 @@ type Data = {
 
 const Experience = ({ data }: PageProps<Data>) => {
   const { edges } = data.experiences
+  let skills: { tech: string; languages: string } = { tech: '', languages: '' }
+
+  const experiences = edges!.map(({ node }, i) => {
+    const { frontmatter, html } = node
+    const { title, company, tech, range, languages } = frontmatter
+    if (languages) {
+      skills.tech = tech
+      skills.languages = languages
+      return
+    }
+
+    return (
+      <Section key={i}>
+        <Title>{title}</Title>
+        <UnderTitle>
+          <CompanyTech>
+            <Company>{company}</Company>
+            <Vert>|</Vert>
+            <Tech>{tech}</Tech>
+          </CompanyTech>
+          <Range>{range}</Range>
+        </UnderTitle>
+        <Description dangerouslySetInnerHTML={{ __html: html }} />
+      </Section>
+    )
+  })
 
   return (
     <Layout>
-      <SEO title='Experience' />
-      {edges!.map(({ node }, i) => {
-        const { frontmatter, html } = node
-        const { title, company, tech, range } = frontmatter
-
-        return (
-          <Section key={i}>
-            <Title>{title}</Title>
-            <UnderTitle>
-              <CompanyTech>
-                <Company>{company}</Company>
-                <Vert>|</Vert>
-                <Tech>{tech}</Tech>
-              </CompanyTech>
-              <Range>{range}</Range>
-            </UnderTitle>
-            <Description dangerouslySetInnerHTML={{ __html: html }} />
-          </Section>
-        )
-      })}
+      <SEO title='Hollis Ma | Experience' />
+      <Skills>
+        <Languages>
+          <b>Languages: </b>
+          {skills.languages}
+        </Languages>
+        <Technologies>
+          <b>Technologies: </b>
+          {skills.tech}
+        </Technologies>
+      </Skills>
+      {experiences}
     </Layout>
   )
 }
@@ -83,6 +109,7 @@ export const pageQuery = graphql`
             company
             tech
             range
+            languages
           }
           html
         }

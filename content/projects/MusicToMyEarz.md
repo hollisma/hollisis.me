@@ -1,6 +1,6 @@
 ---
 title: MusicToMyEarz
-description: Music Rater
+description: ML Music Rater
 github: 'https://github.com/hollisma/musicToMyEarz'
 external: ''
 tech: Python, NumPy, Pandas, Scikit-Learn, Flask, React

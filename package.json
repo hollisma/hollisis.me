@@ -6,9 +6,8 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
     "format": "prettier --write \"src/**/*.{ts,tsx}*\"",
-    "clean": "gatsby clean"
+    "cstart": "gatsby clean && npm start"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
