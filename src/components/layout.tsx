@@ -25,14 +25,15 @@ const Container = styled.div`
 
 type LayoutProps = {
   children: React.ReactNode
+  location: any
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, location }) => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
       <Container>
-        <Navbar />
+        <Navbar location={location} />
         {children}
       </Container>
     </ThemeProvider>

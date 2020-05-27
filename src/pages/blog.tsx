@@ -37,11 +37,11 @@ type Data = {
   }
 }
 
-const Blog = ({ data }: PageProps<Data>) => {
+const Blog = ({ data, location }: PageProps<Data>) => {
   const { posts } = data.postsQuery
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title='Hollis Ma | Blog' />
       {posts &&
         posts.map(({ node }, i) => {

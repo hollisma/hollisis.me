@@ -57,11 +57,11 @@ type Data = {
   }
 }
 
-const Projects = ({ data }: PageProps<Data>) => {
+const Projects = ({ data, location }: PageProps<Data>) => {
   const { edges } = data.allMarkdownRemark
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title='Hollis Ma | Projects' />
       {edges &&
         edges.map(({ node }, i) => {

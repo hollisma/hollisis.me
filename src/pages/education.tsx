@@ -68,7 +68,7 @@ type Data = {
   }
 }
 
-const Education = ({ data }: PageProps<Data>) => {
+const Education = ({ data, location }: PageProps<Data>) => {
   const { blurb, courses } = data
   const { blurb_edges } = blurb
   const { course_edges } = courses
@@ -134,7 +134,7 @@ const Education = ({ data }: PageProps<Data>) => {
   }
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title='Hollis Ma | Education' />
       <div dangerouslySetInnerHTML={{ __html: blurb_edges![0].node.html }} />
       {sectionElems}

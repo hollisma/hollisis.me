@@ -47,7 +47,7 @@ type Data = {
   }
 }
 
-const Experience = ({ data }: PageProps<Data>) => {
+const Experience = ({ data, location }: PageProps<Data>) => {
   const { edges } = data.experiences
   let skills: { tech: string; languages: string } = { tech: '', languages: '' }
 
@@ -77,7 +77,7 @@ const Experience = ({ data }: PageProps<Data>) => {
   })
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title='Hollis Ma | Experience' />
       <Skills>
         <Languages>

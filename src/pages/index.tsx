@@ -44,19 +44,19 @@ const StyledLink = styled(Link)`
   }
 `
 
-const HomePage = ({ data }: PageProps<Data>) => {
+const HomePage = ({ data, location }: PageProps<Data>) => {
   const { site, allMarkdownRemark } = data!
   const { description } = site.siteMetadata
   const { html } = allMarkdownRemark.edges![0].node
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title='Hollis Ma' />
       <Header>{description} :)</Header>
       <About dangerouslySetInnerHTML={{ __html: html }} />
       {navLinks.map(
         ({ name, url }) =>
-          name !== 'Home' && (
+          name !== 'About' && (
             <StyledLink to={url} key={name}>
               {name}
             </StyledLink>
