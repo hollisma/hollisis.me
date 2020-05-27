@@ -22,7 +22,7 @@ const Range = styled.h3`
 const Skills = styled.div`
   margin: 2em 1.5em;
   font-size: 1.25em;
-  line-height: 1.25em;
+  line-height: 1.5em;
 `
 const Languages = styled.p``
 const Technologies = styled.p``

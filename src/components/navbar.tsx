@@ -40,6 +40,7 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
   background-color: #abf;
   align-items: center;
   transition: all 0.2s ease-out;
+  font-weight: 700;
 `
 
 const Navbar = ({ location }: any) => {

@@ -1,8 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import { GlobalStyles, Theme } from '../styles'
-import { media } from '../styles'
-
+import { GlobalStyles, media, Theme } from '../styles'
 import Navbar from './navbar'
 
 // ${media.tablet`
@@ -21,6 +19,7 @@ const Container = styled.div`
   background-color: #afb;
   border-radius: 2vh;
   justify-self: center;
+  font-family: Montserrat;
 `
 
 type LayoutProps = {

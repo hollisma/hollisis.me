@@ -4,10 +4,30 @@ import styled from 'styled-components'
 import { Layout, SEO } from '../components'
 import { list_item } from '../styles'
 
-const Section = list_item.section
-const Post = styled.p`
-  margin-top: 1em;
+const Section = styled(list_item.section)`
+  font-family: Merriweather;
+`
+const Title = styled.h1`
+  font-size: 2.5em;
+  font-family: Montserrat;
+  font-weight: 1000;
+`
+const StyledDate = styled.h3`
+  font-weight: 100;
   font-size: 1em;
+  margin-top: 0.25em;
+`
+const Post = styled.div`
+  margin-top: 1em;
+  font-size: 1.25em;
+  list-style-position: inside;
+  line-height: 1.75em;
+  p {
+    margin: 1.5em 0;
+  }
+  li {
+    margin: 1em 0;
+  }
 `
 const LinkSection = styled.div`
   display: flex;
@@ -20,10 +40,23 @@ const StyledLink = styled(Link)`
   background: #ccf;
   padding: 0.75em;
   border-radius: 0.5em;
+  font-weight: bold;
 `
 const ForwardLink = styled(StyledLink)`
   float: right;
   margin-left: auto;
+`
+const LeftArrow = styled.span`
+  font-size: 1.25em;
+  &::before {
+    content: '←';
+  }
+`
+const RightArrow = styled.span`
+  font-size: 1.25em;
+  &::before {
+    content: '→';
+  }
 `
 
 interface Props extends PageRendererProps {
@@ -52,33 +85,39 @@ interface Props extends PageRendererProps {
       }
       frontmatter: {
         title: string
+        date: string
       }
       html: string
     }
   }
 }
 
-const Blog = ({ data, pageContext }: Props) => {
+const Blog = ({ data, pageContext, location }: Props) => {
   const { frontmatter, html } = data.markdownRemark!
-  const { title } = frontmatter!
+  const { title, date } = frontmatter!
   const { previous, next } = pageContext
 
+  const dateObj = new Date(date)
+  const dateArr = dateObj.toString().split(' ')
+  const dateStr = `${dateArr[1]} ${dateArr[2]}, ${dateArr[3]}`
+
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title='Blog' />
       <Section>
-        <h1>{title}</h1>
+        <Title>{title}</Title>
+        <StyledDate>{dateStr}</StyledDate>
         <Post dangerouslySetInnerHTML={{ __html: html }} />
       </Section>
       <LinkSection>
         {previous && (
           <StyledLink to={previous.fields!.slug!}>
-            ←{previous.frontmatter!.title!}
+            <LeftArrow /> {previous.frontmatter!.title!}
           </StyledLink>
         )}
         {next && (
           <ForwardLink to={next.fields!.slug!}>
-            {next.frontmatter!.title!}→
+            {next.frontmatter!.title!} <RightArrow />
           </ForwardLink>
         )}
       </LinkSection>
@@ -96,6 +135,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        date
       }
       html
     }

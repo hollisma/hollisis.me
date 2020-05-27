@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-ExtraBold.ttf');
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-Regular.ttf');
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-Bold.ttf');
+  font-weight: bold;
+}

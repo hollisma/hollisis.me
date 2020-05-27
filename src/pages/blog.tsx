@@ -18,7 +18,9 @@ const BlogLink = styled(Link)`
 `
 const Post = styled.p`
   margin-top: 1em;
-  font-size: 1em;
+  font-size: 1.25em;
+  font-family: Merriweather;
+  line-height: 1.5em;
 `
 
 type Data = {
@@ -31,6 +33,7 @@ type Data = {
         frontmatter: {
           title: string
         }
+        excerpt: string
         html: string
       }
     }[]
@@ -39,19 +42,20 @@ type Data = {
 
 const Blog = ({ data, location }: PageProps<Data>) => {
   const { posts } = data.postsQuery
+  console.log(posts)
 
   return (
     <Layout location={location}>
       <SEO title='Hollis Ma | Blog' />
       {posts &&
         posts.map(({ node }, i) => {
-          const { fields, frontmatter, html } = node
+          const { fields, frontmatter, excerpt, html } = node
           const { title } = frontmatter
 
           return (
             <Section key={i}>
               <BlogLink to={fields!.slug}>{title}</BlogLink>
-              <Post dangerouslySetInnerHTML={{ __html: html }} />
+              <Post>{excerpt}</Post>
             </Section>
           )
         })}
@@ -75,6 +79,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
           }
+          excerpt(pruneLength: 200)
           html
         }
       }

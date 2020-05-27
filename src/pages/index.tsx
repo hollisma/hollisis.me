@@ -25,6 +25,7 @@ const Header = styled.h1`
 
 const About = styled.div`
   font-size: 1.5em;
+  line-height: 1.5em;
   margin-bottom: 1.5em;
 `
 
@@ -37,6 +38,7 @@ const StyledLink = styled(Link)`
   border-radius: 0.5em;
   text-decoration: none;
   color: #f33;
+  font-weight: bold;
   transition: all 0.2s ease;
   &:hover {
     background-color: #6b7;
