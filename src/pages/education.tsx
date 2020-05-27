@@ -105,9 +105,7 @@ const Education = ({ data }: PageProps<Data>) => {
   return (
     <Layout>
       <SEO title='Education' />
-      {blurb_edges && (
-        <div dangerouslySetInnerHTML={{ __html: blurb_edges[0].node.html }} />
-      )}
+      <div dangerouslySetInnerHTML={{ __html: blurb_edges![0].node.html }} />
       {sectionElems}
     </Layout>
   )

@@ -4,7 +4,7 @@ description: 2.5D Shooter
 github: 'https://github.com/MichaelF49/Pacman3D'
 external: 'https://github.com/hollisma/Pac-Atac'
 tech: JavaScript, Three.js, React
-date: 1
+order: 1
 ---
 
 - Built (with 3 other friends) a 2.5D Shooter with a Pacman theme

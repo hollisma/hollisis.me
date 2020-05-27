@@ -36,7 +36,11 @@ const HomePage = ({ data }: PageProps<Data>) => {
       <Header>{description} :)</Header>
       {navLinks.map(
         ({ name, url }) =>
-          name !== 'Home' && <StyledLink to={url}>{name}</StyledLink>
+          name !== 'Home' && (
+            <StyledLink to={url} key={name}>
+              {name}
+            </StyledLink>
+          )
       )}
     </Layout>
   )

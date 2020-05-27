@@ -18,7 +18,7 @@ const list_item = {
     }
   `,
   title: styled.h1`
-    font-size: 2rem;
+    font-size: 2em;
   `,
   under_title: styled.div`
     display: flex;

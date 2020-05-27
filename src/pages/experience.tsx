@@ -45,26 +45,25 @@ const Experience = ({ data }: PageProps<Data>) => {
   return (
     <Layout>
       <SEO title='Experience' />
-      {edges &&
-        edges.map(({ node }, i) => {
-          const { frontmatter, html } = node
-          const { title, company, tech, range } = frontmatter
+      {edges!.map(({ node }, i) => {
+        const { frontmatter, html } = node
+        const { title, company, tech, range } = frontmatter
 
-          return (
-            <Section key={i}>
-              <Title>{title}</Title>
-              <UnderTitle>
-                <CompanyTech>
-                  <Company>{company}</Company>
-                  <Vert>|</Vert>
-                  <Tech>{tech}</Tech>
-                </CompanyTech>
-                <Range>{range}</Range>
-              </UnderTitle>
-              <Description dangerouslySetInnerHTML={{ __html: html }} />
-            </Section>
-          )
-        })}
+        return (
+          <Section key={i}>
+            <Title>{title}</Title>
+            <UnderTitle>
+              <CompanyTech>
+                <Company>{company}</Company>
+                <Vert>|</Vert>
+                <Tech>{tech}</Tech>
+              </CompanyTech>
+              <Range>{range}</Range>
+            </UnderTitle>
+            <Description dangerouslySetInnerHTML={{ __html: html }} />
+          </Section>
+        )
+      })}
     </Layout>
   )
 }
@@ -75,7 +74,7 @@ export const pageQuery = graphql`
   {
     experiences: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/experience/" } }
-      sort: { fields: [frontmatter___date], order: ASC }
+      sort: { fields: [frontmatter___order], order: ASC }
     ) {
       edges {
         node {

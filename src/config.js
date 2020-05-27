@@ -39,5 +39,9 @@ module.exports = {
       name: 'Projects',
       url: '/projects',
     },
+    {
+      name: 'Blog',
+      url: '/blog',
+    },
   ],
 }

@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
   return (
     <LinkContainer scrolled={scrolled}>
       {navLinks.map(({ name, url }) => (
-        <StyledLink to={url}>
+        <StyledLink to={url} key={name}>
           <p>{name}</p>
         </StyledLink>
       ))}
