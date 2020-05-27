@@ -51,7 +51,7 @@ const Navbar = ({ location }: any) => {
     }
   })
 
-  const current = location.pathname.split('/')[1]
+  const current = location && location.pathname.split('/')[1]
 
   return (
     <LinkContainer scrolled={scrolled}>
