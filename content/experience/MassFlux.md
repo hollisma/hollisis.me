@@ -1,9 +1,9 @@
 ---
 title: 'Software Engineer'
 company: 'MassFlux'
-tech: 'JavaScript, Python'
-range: 'Feb 20 -- Present'
+tech: 'InfluxDB, Grafana, Node.js, Express, Docker'
+range: 'Feb 20 - Present'
 order: 0
 ---
 
-- Currently working on creating RESTful API, UI, Grafana dashboards, and hosting server to connect custom cart to database to optimize warehouse workflow (InfluxDB, Node.js, Express)
+- Currently working on creating a RESTful API, UI, Grafana dashboards, and hosting server to connect self-made carts to database to optimize warehouse workflow

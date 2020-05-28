@@ -2,7 +2,7 @@
 title: Computer Science TA
 company: Princeton CS Department
 tech: Java, C, Assembly
-range: "Sep '19 -- Present"
+range: "Sep '19 - Present"
 order: 1
 ---
 

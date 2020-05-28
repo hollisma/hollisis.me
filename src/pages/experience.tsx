@@ -9,7 +9,9 @@ const Title = list_item.title
 const UnderTitle = list_item.under_title
 const Description = list_item.description
 
-const CompanyTech = list_item.flex_row_container
+const CompanyTech = styled(list_item.flex_row_container)`
+  width: 35em;
+`
 const Company = list_item.left_item
 const Tech = list_item.right_item
 const Vert = list_item.vert_bar

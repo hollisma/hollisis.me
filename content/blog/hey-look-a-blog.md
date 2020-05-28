@@ -55,7 +55,6 @@ goals. You can even build games or programs and just talk about how I made them.
 
 Another benefit of writing a blog is that I'll be able to write in my own "voice." I'm not sure 
 what that means yet, but I assume it has something to do with becoming a more refined individual, 
-which is good. I have a tendency to overthink, so there'll probably be a lot of nuance in the 
-posts that don't initially make sense. In any case, I'll try to exercise and experiment with my 
+which sounds ok. I have a tendency to overthink, so there'll probably be a lot of nuance in the writing that doesn't initially make sense. In any case, I'll try to exercise and experiment with my 
 vocal cords and write in a tone that suits me, which is probably something like a really informal, 
-somewhat inconsistent meta commentary of a caveman documenting his search for a needle in a forest.
+somewhat inconsistent meta commentary of a caveman documenting his search for a needle in an overgrown forest.

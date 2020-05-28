@@ -17,12 +17,12 @@ const StyledLink = styled(Link)<{ current: string }>`
   ${props =>
     props.current === 'true'
       ? css`
-          background: #8a97c9 !important;
+          background: #92a1d6 !important;
           color: #00b;
         `
       : css`
           &:hover {
-            -webkit-filter: brightness(90%);
+            -webkit-filter: brightness(93%);
           }
         `}
   p {

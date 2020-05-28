@@ -3,7 +3,7 @@ title: MusicToMyEarz
 description: ML Music Rater
 github: 'https://github.com/hollisma/musicToMyEarz'
 external: ''
-tech: Python, NumPy, Pandas, Scikit-Learn, Flask, React
+tech: Flask, NumPy, Pandas, Scikit-Learn
 order: 3
 ---
 
