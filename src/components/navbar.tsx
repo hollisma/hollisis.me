@@ -58,7 +58,7 @@ const Navbar = ({ location }: any) => {
     <LinkContainer scrolled={scrolled}>
       {navLinks.map(({ name, url }) => {
         const urlSub = url.split('/')[1]
-        const pathSub = pathname.split('/')[1]
+        const pathSub = pathname && pathname.split('/')[1]
 
         return (
           <StyledLink
