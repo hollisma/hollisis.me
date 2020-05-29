@@ -26,6 +26,14 @@ module.exports = {
               rel: 'nofollow noopener noreferrer',
             },
           },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+              showCaptions: true,
+              backgroundColor: 'transparent',
+            },
+          },
         ],
       },
     },

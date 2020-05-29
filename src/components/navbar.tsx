@@ -37,6 +37,7 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
   left: 0;
   height: ${props => (props.scrolled ? '3.5em' : '4.5em')};
   width: 100%;
+  z-index: 1;
   background-color: #abf;
   align-items: center;
   transition: all 0.2s ease-out;

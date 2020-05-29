@@ -25,8 +25,22 @@ const Post = styled.div`
   p {
     margin: 1.5em 0;
   }
+  p a.footnote_small {
+    color: purple;
+    position: relative;
+    bottom: 7px;
+    font-size: 0.75em;
+  }
   li {
     margin: 1em 0;
+  }
+  figure {
+    padding-top: 0.5em;
+  }
+  figcaption {
+    margin-top: 0.75em;
+    text-align: center;
+    font-size: 0.75em;
   }
 `
 const LinkSection = styled.div`
