@@ -34,6 +34,15 @@ const Post = styled.div`
   li {
     margin: 1em 0;
   }
+  a {
+    color: purple;
+  }
+  .anchor {
+    display: inline-block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+  }
   figure {
     padding-top: 0.5em;
   }
