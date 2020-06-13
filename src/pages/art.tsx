@@ -10,27 +10,31 @@ const StyledImg = styled(Img)`
   margin: 10px;
 `
 
-type ChildImage = {
-  childImageSharp: {
-    fluid: FluidObject
+type Data = {
+  allFile: {
+    edges: {
+      node: {
+        id: string
+        name: string
+        childImageSharp: {
+          fluid: FluidObject
+        }
+      }
+    }[]
   }
 }
 
-type Data = {
-  img1: ChildImage
-  img2: ChildImage
-  img3: ChildImage
-}
-
 const Blog = ({ data, location }: PageProps<Data>) => {
-  console.log(data)
+  const images = data.allFile.edges
 
   return (
     <Layout location={location} size='large'>
       <SEO title='Hollis Ma | Art' />
-      <StyledImg fluid={data.img1.childImageSharp.fluid} />
-      <StyledImg fluid={data.img2.childImageSharp.fluid} />
-      <StyledImg fluid={data.img3.childImageSharp.fluid} />
+      {images.map(({ node }) => {
+        const { id, name, childImageSharp } = node
+
+        return <StyledImg key={id} title={name} fluid={childImageSharp.fluid} />
+      })}
     </Layout>
   )
 }
@@ -40,7 +44,7 @@ export default Blog
 export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
-      fluid(maxWidth: 200, maxHeight: 200) {
+      fluid(maxHeight: 200) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -49,14 +53,20 @@ export const squareImage = graphql`
 
 export const query = graphql`
   query {
-    img1: file(relativePath: { eq: "Tree1.png" }) {
-      ...squareImage
-    }
-    img2: file(relativePath: { eq: "Brain.png" }) {
-      ...squareImage
-    }
-    img3: file(relativePath: { eq: "blueberry.png" }) {
-      ...squareImage
+    allFile(
+      filter: {
+        extension: { regex: "/(jpg)|(png)/" }
+        relativeDirectory: { eq: "art" }
+      }
+    ) {
+      edges {
+        node {
+          id
+          name
+          relativeDirectory
+          ...squareImage
+        }
+      }
     }
   }
 `
