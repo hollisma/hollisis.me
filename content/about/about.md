@@ -1,1 +1,2 @@
-Hi! I'm a rising junior at Princeton and I love computer science, math, philsophy, psychology, learning, music, and a whole slew of other things. 
+Hi! I'm a rising junior at Princeton and I love computer science, math, philsophy, psychology, learning, music, and a whole slew of other things. You can reach me at hollism AT princeton dot edu. 
+![ ](./hollis_nyc.JPG)

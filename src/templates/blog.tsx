@@ -37,7 +37,7 @@ const Post = styled.div`
   a {
     color: purple;
   }
-  .anchor {
+  f.anchor {
     display: inline-block;
     position: relative;
     top: -80px;

@@ -7,7 +7,7 @@ const list_item = {
     width: 87.5%;
     background-color: #fea;
     padding: 2em 3em;
-    margin-bottom: 5vh;
+    margin-bottom: 3em;
     border-radius: 2em;
     &:last-of-type {
       margin-bottom: 0;
