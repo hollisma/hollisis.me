@@ -43,5 +43,9 @@ module.exports = {
       name: 'Blog',
       url: '/blog',
     },
+    {
+      name: 'Art',
+      url: '/art',
+    },
   ],
 }
