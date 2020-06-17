@@ -41,16 +41,6 @@ const Blog = ({ data, location }: PageProps<Data>) => {
 
 export default Blog
 
-export const squareImage = graphql`
-  fragment squareImage on File {
-    childImageSharp {
-      fluid(maxHeight: 200) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
-
 export const query = graphql`
   query {
     allFile(
@@ -64,7 +54,11 @@ export const query = graphql`
           id
           name
           relativeDirectory
-          ...squareImage
+          childImageSharp {
+            fluid(maxHeight: 200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }

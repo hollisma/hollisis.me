@@ -60,7 +60,7 @@ than learning through an internship or at a university. Unfortunately, I will no
 this theory out. When I told my recruiters that I wouldn't be doing an internship and would 
 instead be learning on my own, one startup offered me a different kind of internship.  
 
-![Take a breather and enjoy my pixel art :)](./Brain.png)
+![Take a breather and enjoy some pixel art :)](./images/Brain.png)
 
 My goal for this summer is to learn efficiently, and for me, learning is done best with the 
 absence of deadlines and with the freedom to explore and enjoy the amazing theme parks of computer 

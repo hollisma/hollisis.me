@@ -12,9 +12,11 @@ const Container = styled.div<{ size: string }>`
   width: auto;
   max-width: ${props => (props.size == 'large' ? '75em' : '50em')};
   margin: 7em auto 4em;
-  ${media(1440)`
-    margin: 7em 5em 4em;
-  `}
+  ${props =>
+    props.size == 'large' &&
+    media(1440)`
+      margin: 7em 5em 4em;
+    `}
   ${media(900)`
     margin-top: 5em;
   `}

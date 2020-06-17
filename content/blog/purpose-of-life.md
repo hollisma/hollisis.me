@@ -15,7 +15,7 @@ However, if I work hard counting the blades of grass in my neighborhood, this do
 
 Now that we've defined fulfillment and its identifying factors, how can we use this knowledge in our own pursuits for meaningful lives?
 
-[break: include photo of sapling with caption "Take a break and enjoy some pixel art :)"]
+![Take a break and enjoy some pixel art :)](./images/Blueberry.png)
 
 Studying what fulfillment is and where it grows empowers us to identify meaningful goals and helps us realize when we might be chasing pipe dreams. An example of the latter case can be seen in many college students' lives. If our friends are chasing pretigious jobs and green paper and we don't stop to figure out our own personal goals, it's easy to get swept up in also valuing those things. If we find ourselves in this position and ask ourselves if we need to work hard and will improve from these goals, the answer will be yes, so chasing these things will most likely provide fulfillment. But the problem comes if we keep chasing a better career and money. The fifth promotion is probably less significant and helpful than getting the initial job, and same with green paper. Therefore the fulfillment criteria are not fulfilled, implying that those goals are not worth long term pursuit. 
 
