@@ -19,16 +19,32 @@ type Data = {
   }
 }
 
+const NoBottomPaddingLayout = styled(Layout)`
+  background-color: blue !important;
+`
 const Header = styled.h1`
   font-size: 2.5em;
 `
-
 const About = styled.div`
   font-size: 1.5em;
   line-height: 1.5em;
-  margin-bottom: 1.5em;
+  p {
+    margin: 0;
+  }
+  figure {
+    margin: 1.25em;
+    margin-bottom: 2em;
+  }
+  ul {
+    margin: 0.25em 0 1.25em;
+  }
+  ul:last-of-type {
+    margin-bottom: 0;
+  }
+  li {
+    margin-bottom: 0.25em;
+  }
 `
-
 const StyledLink = styled(Link)`
   display: block;
   background-color: #8d9;
@@ -52,19 +68,19 @@ const HomePage = ({ data, location }: PageProps<Data>) => {
   const { html } = allMarkdownRemark.edges![0].node
 
   return (
-    <Layout location={location}>
+    <NoBottomPaddingLayout location={location}>
       <SEO title='Hollis Ma' />
       <Header>{description} :)</Header>
       <About dangerouslySetInnerHTML={{ __html: html }} />
-      {navLinks.map(
+      {/* {navLinks.map(
         ({ name, url }) =>
           name !== 'About' && (
             <StyledLink to={url} key={name}>
               {name}
             </StyledLink>
           )
-      )}
-    </Layout>
+      )} */}
+    </NoBottomPaddingLayout>
   )
 }
 

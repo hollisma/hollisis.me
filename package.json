@@ -3,6 +3,7 @@
   "description": "My Personal Website",
   "version": "1.0.0",
   "author": "Hollis Ma <hollism@princeton.edu>",
+  "homepage": "hollisis.me",
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
