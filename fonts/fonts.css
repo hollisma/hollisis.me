@@ -1,24 +1,29 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('Montserrat-Regular.ttf');
+  src: local('Montserrat') url('Montserrat-Regular.ttf');
+  font-display: swap;
 }
-@font-face {
+/* @font-face {
   font-family: 'Montserrat';
-  src: url('Montserrat-Bold.ttf');
+  src: local('Montserrat-Bold') local('Montserrat Bold') url('Montserrat-Bold.ttf');
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('Montserrat-ExtraBold.ttf');
+  src: local('Montserrat-ExtraBold') local('Montserrat ExtraBold') url('Montserrat-ExtraBold.ttf');
   font-weight: 1000;
-}
+  font-display: swap;
+} */
 
 @font-face {
   font-family: 'Merriweather';
-  src: url('Merriweather-Regular.ttf');
+  src: local('Merriweather') url('Merriweather-Regular.ttf');
+  font-display: swap;
 }
-@font-face {
+/* @font-face {
   font-family: 'Merriweather';
-  src: url('Merriweather-Bold.ttf');
+  src: local('Merriweather-Bold') local('Merriweather Bold') url('Merriweather-Bold.ttf');
   font-weight: bold;
-}
+  font-display: swap;
+} */
