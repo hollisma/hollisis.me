@@ -1,9 +1,9 @@
 Hi! I'm a rising junior at Princeton and I love computer science, math, philsophy, psychology, learning, music, and a whole slew of other things. You can reach me at hollism AT princeton dot edu. 
-![ ](./hollis_nyc.JPG)
+![Hollis Ma in NYC](./hollis_nyc.JPG " ")
 
 What I'm currently doing: 
 - Tidying up this website
-- Learning about and applying NLP for a startup
+- Learning about and applying NLP
 - Building my morning and night routines
 - Slogging through 1000+ Anki cards
 - Writing blog posts and making pixel art

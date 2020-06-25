@@ -25,6 +25,7 @@ const Container = styled.div<{ size: string }>`
   border-radius: 2vh;
   justify-self: center;
   font-family: Montserrat;
+  font-weight: normal;
 `
 
 type LayoutProps = {

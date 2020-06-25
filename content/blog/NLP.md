@@ -24,7 +24,7 @@ Recent research has focused on optimizing performance of these deep learning mod
 
 That's it for RNNs, but many NLP tasks do not rely heavily on context but instead focus on narrower feature selection and do not need to include as much context as RNNs provide. **Convolutional NNs** only allow phrases to be examined and not entire sentences, but they are parallelizable and much faster and work better for localized tasks like named entity recognition and sentiment analysis. Another type of NN used is the **Recursive NN** that takes advantage of the nested structure of language, making it great for bubbling up sentiments. Recursive NNs require a dependency tree and apply weights and combine lower levels to "bubble up" meaning. 
 
-![Take a break and enjoy some pixel art :)](./images/Tree1.png)
+![Pixel art of another tree](./images/Tree1.png "Take a break and enjoy some pixel art :)")
 
 ## Decoding
 
@@ -50,7 +50,7 @@ For **Constituency parsing**, the goal is to not find dependencies between indiv
 
 As mentioned before, parsing is one of the easier tasks to evaluate as there are sets of grammatical rules that sentences follow. However, there are some types of ambiguity, namely structure ambiguity (I ate a fruit **covered in stuff**: does it refer to me or the fruit?) and coordination ambiguity (I like **yellow** apples and kiwis: does it refer to apples or kiwis?), that make evaluation a little more complicated but it's still much simpler than other NLP tasks. 
 
-![Take a break and enjoy some pixel art :)](./images/Tree2.png)
+![Pixel art of another tree](./images/Tree2.png "Take a break and enjoy some pixel art :)")
 
 ### Coreference
 
@@ -78,7 +78,7 @@ This new NN is called **Dynamic Memory Network** (DMN) and is able to incorporat
 
 DMNs also work in visual question answering (questions about images or videos) by replacing the input module with a CNN.
 
-![Take a break and enjoy some pixel art :)](./images/Tree3.png) 
+![Pixel art of ANOTHER tree](./images/Tree3.png "Take a break and enjoy some pixel art :)")
 
 ### Natural Language Generation
 

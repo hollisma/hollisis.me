@@ -26,7 +26,7 @@ const Post = styled.div`
     margin: 1.5em 0;
   }
   p a.footnote_small {
-    color: purple;
+    color: green;
     position: relative;
     bottom: 7px;
     font-size: 0.75em;
@@ -35,12 +35,12 @@ const Post = styled.div`
     margin: 1em 0;
   }
   a {
-    color: purple;
+    color: green;
   }
-  f.anchor {
+  .anchor {
     display: inline-block;
     position: relative;
-    top: -80px;
+    top: -75px;
     visibility: hidden;
   }
   figure {
@@ -137,14 +137,14 @@ const Blog = ({ data, pageContext, location }: Props) => {
         <Post dangerouslySetInnerHTML={{ __html: html }} />
       </Section>
       <LinkSection>
-        {previous && (
-          <StyledLink to={`${sub}${previous.fields!.slug!}`}>
-            <LeftArrow /> {previous.frontmatter!.title!}
+        {next && (
+          <StyledLink to={`${sub}${next.fields!.slug!}`}>
+            <LeftArrow /> {next.frontmatter!.title!}
           </StyledLink>
         )}
-        {next && (
-          <ForwardLink to={`${sub}${next.fields!.slug!}`}>
-            {next.frontmatter!.title!} <RightArrow />
+        {previous && (
+          <ForwardLink to={`${sub}${previous.fields!.slug!}`}>
+            {previous.frontmatter!.title!} <RightArrow />
           </ForwardLink>
         )}
       </LinkSection>

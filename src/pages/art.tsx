@@ -33,7 +33,14 @@ const Blog = ({ data, location }: PageProps<Data>) => {
       {images.map(({ node }) => {
         const { id, name, childImageSharp } = node
 
-        return <StyledImg key={id} title={name} fluid={childImageSharp.fluid} />
+        return (
+          <StyledImg
+            key={id}
+            alt={name}
+            title={name}
+            fluid={childImageSharp.fluid}
+          />
+        )
       })}
     </Layout>
   )

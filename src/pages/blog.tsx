@@ -16,8 +16,11 @@ const BlogLink = styled(Link)`
   color: black;
   text-decoration: none;
 `
+const DateStr = styled.p`
+  font-family: Merriweather;
+`
 const Post = styled.p`
-  margin-top: 1em;
+  margin-top: 0.75em;
   font-size: 1.25em;
   font-family: Merriweather;
   line-height: 1.5em;
@@ -32,6 +35,7 @@ type Data = {
         }
         frontmatter: {
           title: string
+          date: string
         }
         excerpt: string
       }
@@ -48,13 +52,20 @@ const Blog = ({ data, location }: PageProps<Data>) => {
       {posts &&
         posts.map(({ node }, i) => {
           const { fields, frontmatter, excerpt } = node
-          const { title } = frontmatter
+          const { title, date } = frontmatter
+
+          const dateObj = new Date(date)
+          const dateArr = dateObj.toString().split(' ')
+          const dateStr = `${dateArr[1]} ${Number(dateArr[2]) + 1}, ${
+            dateArr[3]
+          }`
 
           return (
             <Section key={i}>
               <BlogLink to={`${location.pathname}${fields!.slug}`}>
                 {title}
               </BlogLink>
+              <DateStr>{dateStr}</DateStr>
               <Post>{excerpt}</Post>
             </Section>
           )
@@ -78,6 +89,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            date
           }
           excerpt(pruneLength: 200)
         }
