@@ -2,7 +2,7 @@
 title: Least Squares Analysis of Smash
 description: Applied Linear Algebra
 github: ''
-external: './Least_Squares_Analysis_of_Smash.pdf'
+external: '../education/Least_Squares_Analysis_of_Smash.pdf'
 tech: MATLAB, Python
 order: 4
 ---

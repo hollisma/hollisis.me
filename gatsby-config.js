@@ -32,6 +32,7 @@ module.exports = {
               maxWidth: 800,
               showCaptions: ['title'],
               backgroundColor: 'transparent',
+              linkImagesToOriginal: false,
             },
           },
         ],
