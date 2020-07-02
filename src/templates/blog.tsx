@@ -122,9 +122,9 @@ const Blog = ({ data, pageContext, location }: Props) => {
   const { title, date } = frontmatter!
   const { previous, next } = pageContext
 
-  const dateObj = new Date(date)
+  const dateObj = new Date(date + 'T00:00')
   const dateArr = dateObj.toString().split(' ')
-  const dateStr = `${dateArr[1]} ${Number(dateArr[2]) + 1}, ${dateArr[3]}`
+  const dateStr = `${dateArr[1]} ${Number(dateArr[2])}, ${dateArr[3]}`
 
   const sub = location.pathname.split('/')[1]
 

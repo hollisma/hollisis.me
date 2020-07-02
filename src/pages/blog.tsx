@@ -54,9 +54,9 @@ const Blog = ({ data, location }: PageProps<Data>) => {
           const { fields, frontmatter, excerpt } = node
           const { title, date } = frontmatter
 
-          const dateObj = new Date(date)
+          const dateObj = new Date(date + 'T00:00')
           const dateArr = dateObj.toString().split(' ')
-          const dateStr = `${dateArr[1]} ${Number(dateArr[2]) + 1}, ${
+          const dateStr = `${dateArr[1]} ${Number(dateArr[2])}, ${
             dateArr[3]
           }`
 
