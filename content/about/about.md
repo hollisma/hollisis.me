@@ -1,20 +1,26 @@
 Hi! I'm a rising junior at Princeton and I love computer science, math, philsophy, psychology, learning, music, and a whole slew of other things. You can reach me at hollism AT princeton dot edu. 
 ![Hollis Ma in NYC](./hollis_nyc.JPG " ")
 
-What I'm currently doing: 
+What I'm currently doing:
+- Learning about computer vision, business, philosophy of mind, sociology of the internet, and NLP in school
+- Doing research on GANs for text generation 
+- Taking care of baby chicks
+- Developing my Notion dashboard
+- Playing Realm of the Mad God
 - Tidying up this website
-- Learning about and applying NLP
-- Building my morning and night routines
-- Slogging through 1000+ Anki cards
-- Writing blog posts and making pixel art
-- Learning Korean!
+- Playing tennis and basketball with family
+<!-- - Learning about and applying NLP -->
+<!-- - Building my morning and night routines -->
+<!-- - Slogging through 1000+ Anki cards -->
+<!-- - Writing blog posts and making pixel art -->
+<!-- - Learning Korean! -->
 
-Here are some of my interests! 
+Here are some of the things I love! 
 - Cats
+- Baby chicks
 - Penguins
-- Learning! Am obsessed with meta-learning
-- Books... love fiction, sci-fi, and the occasional self-help read
-- Traveling... best memory is backpacking in Europe
+- Learning! Especially meta-learning
+- Traveling... fav memory is backpacking in Europe with friends
 - Literary and film analysis
 - Running and breakdancing... especially at the same time :D
-- Making scrambled eggs and omelets 
+- Making scrambled eggs, omelets, egg fried rice, and banana bread

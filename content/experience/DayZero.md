@@ -3,7 +3,7 @@ title: Co-founder
 company: DayZero
 tech: MongoDB, Express, React, Redux, Node.js, Python
 range: "May '19 - Jan '20"
-order: 2
+order: 3
 ---
 
 - Led team of 5 in design and creation of full stack social media platform 
