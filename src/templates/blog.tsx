@@ -126,8 +126,6 @@ const Blog = ({ data, pageContext, location }: Props) => {
   const dateArr = dateObj.toString().split(' ')
   const dateStr = `${dateArr[1]} ${Number(dateArr[2])}, ${dateArr[3]}`
 
-  const sub = location.pathname.split('/')[1]
-
   return (
     <Layout location={location}>
       <SEO title='Blog' />
@@ -138,12 +136,12 @@ const Blog = ({ data, pageContext, location }: Props) => {
       </Section>
       <LinkSection>
         {next && (
-          <StyledLink to={`${sub}${next.fields!.slug!}`}>
+          <StyledLink to={`/blog${next.fields!.slug!}`}>
             <LeftArrow /> {next.frontmatter!.title!}
           </StyledLink>
         )}
         {previous && (
-          <ForwardLink to={`${sub}${previous.fields!.slug!}`}>
+          <ForwardLink to={`/blog${previous.fields!.slug!}`}>
             {previous.frontmatter!.title!} <RightArrow />
           </ForwardLink>
         )}
