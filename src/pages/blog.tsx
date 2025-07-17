@@ -60,9 +60,11 @@ const Blog = ({ data, location }: PageProps<Data>) => {
             dateArr[3]
           }`
 
+          // Ensure only one slash between pathname and slug
+          const cleanPath = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
           return (
             <Section key={i}>
-              <BlogLink to={`${location.pathname}${fields!.slug}`}>
+              <BlogLink to={`${cleanPath}${fields!.slug}`}>
                 {title}
               </BlogLink>
               <DateStr>{dateStr}</DateStr>
