@@ -28,6 +28,14 @@ const Header = styled.h1`
 const About = styled.div`
   font-size: 1.5em;
   line-height: 1.5em;
+  img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 2em auto;
+    border-radius: 1em;
+  }
   p {
     margin: 0;
   }
