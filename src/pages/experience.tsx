@@ -98,7 +98,7 @@ const Experience = ({ data, location }: PageProps<Data>) => {
     <Layout location={location}>
       <SEO title='Hollis Ma | Experience' />
       <Resume
-        href='./Resume.pdf'
+        href='/Resume.pdf'
         target='_blank'
         rel='nofollow noopener noreferrer'
       >
