@@ -43,7 +43,7 @@ The way I see it, there are 2 main uses of podcasts: a way to consistently learn
 
 Listening while exercising, eating, or doing dishes is essentially double efficiency since you can learn on top of what you're already doing. This makes it the perfect tool for learning a little everyday. 
 
-I feel somewhat conflicted though because after My Meditation Week, I've been trying to do things more mindfully. Listening to podcasts while doing something else is basically the opposite of mindfulness since your attention is split. 
+I feel somewhat conflicted though because after [My Meditation Week](/blog/my-meditation-week), I've been trying to do things more mindfully. Listening to podcasts while doing something else is basically the opposite of mindfulness since your attention is split. 
 
 The solution to this I believe comes from how exhausting mindfulness can be. As I covered in my meditation post, mindfulness is basically a mental workout that trains your attention, hence why it can be so tiring. This makes podcasts a solid backup for when I don't have the energy to be fully mindful. 
 
