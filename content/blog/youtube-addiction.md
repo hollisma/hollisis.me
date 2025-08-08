@@ -71,7 +71,7 @@ I honestly use Override about as much as I use private tabs, but it's much easie
 
 I use Override when I'm in the middle of a video and get blocked out (with the "Immediately block page..." setting on), or when I know that a video will go over 15 minutes (after factoring in playback speed calculations). But I should try to use Private Tabs when I can. Either way, it's another, more customizable, option to deal with longer intention YouTube use.  
 
-#### Pro Strat 3: Watch Later
+#### Pro Strat 3: Restocking Watch Later
 
 Earlier, I mentioned that the strategy removes the algorithm from play in favor of an educational Watch Later. But once we watch all the videos in Watch Later, how do we re-stock it if we aren't getting new videos from the algorithm?
 

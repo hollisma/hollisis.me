@@ -19,7 +19,7 @@ const StyledDate = styled.h3`
 `
 const Post = styled.div`
   margin-top: 0.5em;
-  font-size: 1.25em;
+  font-size: 1.15em;
   list-style-position: inside;
   line-height: 1.75em;
   p {
@@ -50,6 +50,15 @@ const Post = styled.div`
     margin-top: 0.75em;
     text-align: center;
     font-size: 0.75em;
+  }
+  h1, h2 {
+    margin: 1.5em 0 0.75em 0;
+  }
+  h1 + h2 {
+    margin-top: 0.5em;
+  }
+  h2:has(+ h5) {
+    margin-bottom: 0.0em;
   }
 `
 const LinkSection = styled.div`
