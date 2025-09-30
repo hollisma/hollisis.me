@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, PageRendererProps, Link } from 'gatsby'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Layout, SEO } from '../components'
 import { list_item } from '../styles'
 
@@ -17,7 +17,7 @@ const StyledDate = styled.h3`
   font-size: 1em;
   margin-top: 0.25em;
 `
-const Post = styled.div`
+const Post = styled.div<{ isPoem?: boolean }>`
   margin-top: 0.5em;
   font-size: 1.15em;
   list-style-position: inside;
@@ -25,6 +25,16 @@ const Post = styled.div`
   p {
     margin: 1.5em 0;
   }
+  ${props => props.isPoem && css`
+    line-height: 1.6em;
+    p {
+      white-space: pre-line;
+      margin: 0 0 1.25em 0;
+    }
+    p:first-of-type {
+      margin-top: 1.5em;
+    }
+  `}
   p a.footnote_small {
     color: green;
     position: relative;
@@ -120,6 +130,7 @@ interface Props extends PageRendererProps {
       frontmatter: {
         title: string
         date: string
+        poem?: boolean
       }
       html: string
     }
@@ -128,7 +139,7 @@ interface Props extends PageRendererProps {
 
 const Blog = ({ data, pageContext, location }: Props) => {
   const { frontmatter, html } = data.markdownRemark!
-  const { title, date } = frontmatter!
+  const { title, date, poem } = frontmatter!
   const { previous, next } = pageContext
 
   const dateObj = new Date(date + 'T00:00')
@@ -141,7 +152,7 @@ const Blog = ({ data, pageContext, location }: Props) => {
       <Section>
         <Title>{title}</Title>
         <StyledDate>{dateStr}</StyledDate>
-        <Post dangerouslySetInnerHTML={{ __html: html }} />
+        <Post isPoem={poem} dangerouslySetInnerHTML={{ __html: html }} />
       </Section>
       <LinkSection>
         {next && (
@@ -170,6 +181,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
+        poem
       }
       html
     }
