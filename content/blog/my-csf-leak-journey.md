@@ -11,7 +11,7 @@ Last summer, I remember eating ramen with a friend after a long climbing session
 
 ## **How It Started**
 
-In July 2024, I tested negative for covid. I'm pretty sure I had it though, as my symptoms matched, and someone I was hanging out with a couple days prior had just tested positive. Within a couple weeks, I was feeling better and returned to work in our Seattle office. But on the first day back, I had to leave early cause I felt sick again -- this time with a fever and headaches. I figured it was just the second wave of whatever I had and that I would recover with a little more rest. 
+In July 2024, I tested negative for covid. I'm pretty sure I had it though, as my symptoms matched, and someone I was hanging out with a couple days prior had just tested positive. Within a couple weeks, I was feeling better and returned to work in our Seattle office. But on the first day back, I had to leave early cause I felt sick again, this time with a fever and headaches. I figured it was just the second wave of whatever I had and that I would recover with a little more rest. 
 
 The next day, everything got worse. My fever spiked, I felt nauseous and dizzy, nearly collapsing in the shower, and I was somehow both constantly sweating while also having chills. My skin was hypersensitive, my throat hurt, and my head throbbed with pain. I scheduled a virtual appointment with my primary care doctor, but they called and told me to go in immediately. They ran a full suite of tests that included nasal swabs for covid and flu, a throat culture for strep, and blood tests to check my liver and kidneys. They weren't sure what was wrong, but they prescribed me some antibiotics, handed me some painkillers, and sent me home to rest. 
 
@@ -21,7 +21,7 @@ And when I say "make it through", I mean it in the rawest sense. My fever raged,
 
 When I finally woke up, I had no appetite, which was concerning as I hadn't eaten anything the day before. I forced myself to swallow some chicken noodle soup and watermelon. Laying in bed afterwards, I felt a wave of nausea, rushed to the kitchen, and was able to land most of my meal into the sink. Then I called an Uber and headed to my first emergency room visit. 
 
-At the ER, they did the whole suite of tests again -- nasal swabs, throat cultures, blood draws, and then some. They also couldn't figure out what was wrong. However, the symptoms suggested a possible a brain infection, so the doctors recommended screening with a lumbar puncture, a procedure they described as routine and low-risk. I called my parents, who initially cautioned against any procedures, but the doctors reassured us with how they performed it on a daily basis with no issues, and a brain infection was no laughing matter, even if hypothetical. Eventually, we agreed to do the lumbar puncture. 
+At the ER, they did the whole suite of tests again: nasal swabs, throat cultures, blood draws, and then some. They also couldn't figure out what was wrong. However, the symptoms suggested a possible a brain infection, so the doctors recommended screening with a lumbar puncture, a procedure they described as routine and low-risk. I called my parents, who initially cautioned against any procedures, but the doctors reassured us with how they performed it on a daily basis with no issues, and a brain infection was no laughing matter, even if hypothetical. Eventually, we agreed to do the lumbar puncture. 
 
 I had no way of knowing how much this decision would change my life. 
 
@@ -40,8 +40,10 @@ I got dropped off at my apartment and hobbled up the stairs into my room. If I b
 ##### *(Day 1)*
 
 The headaches did not improve the next day. In fact, I got to experience the full severity and debilitating nature of them. Every time I sat up or stood up straight, even for just a couple seconds, it would feel like a truck crashing into my head and slamming me with the worst headache of my life, an overwhelming, throbbing pain at the front of my head. The weird part was that if I laid down, the headache would vanish. 
-    - I later learned that I was suffering from one of the potential side effects of lumbar punctures: a CSF leak. CSF stands for cerebral spinal fluid, and it's what surrounds your spine and suspends the brain in the skull. When a lumbar puncture site doesn't heal properly, CSF can leak out out of the membrane in the lower back, causing issues in this delicate system. Gravity worsens this in two ways: it increases the rate of leakage when the body is vertical, and also pulls downward on the brain. Normally, the brain is cushioned by the CSF, but with the CSF leaking, that force is now applied on the sensitive nerves and tissues around the brain, causing those exploding headaches. 
-    - People online say that CSF leak headaches are the worst pain they've ever felt, second only to giving birth. I've never experienced childbirth, but now, I have that much more respect for those who have. 
+
+I later learned that I was suffering from one of the potential side effects of lumbar punctures: a CSF leak. CSF stands for cerebral spinal fluid, and it's what surrounds your spine and suspends the brain in the skull. When a lumbar puncture site doesn't heal properly, CSF can leak out out of the membrane in the lower back, causing issues in this delicate system. Gravity worsens this in two ways: it increases the rate of leakage when the body is vertical, and also pulls downward on the brain. Normally, the brain is cushioned by the CSF, but with the CSF leaking, that force is now applied on the sensitive nerves and tissues around the brain, causing those exploding headaches. 
+
+People online say that CSF leak headaches are the worst pain they've ever felt, second only to giving birth. I've never experienced childbirth, but now, I have that much more respect for those who have. 
 
 At the time I got the lumbar puncture, I did not know all this, but I knew that being horizontal softened the headaches. I spent the day after the procedure laying in bed, only getting up to hobble to the bathroom, staring at the floor and using my arms as support against the walls. I didn't even bother with eating as I was still nauseous, still feverish, and oh -- now I could barely swallow. My throat was rapidly swelling, and every sip of water felt like I was swallowing pills down an esophagus lined with sandpaper. 
 
@@ -54,7 +56,7 @@ Once I was released from the second, slightly less hellish car ride, I hobbled t
 
 What followed was a series of routine yet novel hospital procedures. They gave me antibiotics for what was likely a throat infection, guided me through a CAT scan where they pumped hot liquid contrast through an IV (which made me feel like I had peed myself), and most importantly, handed me two protein shakes for dinner. Those shakes tasted like nectar. They were my first real source of calories in days. Aside from the shakes, I estimate I'd absorbed just 300 calories over the previous four-day stretch. 
 
-They told me that I was to stay the night, and I realized that I'm being hospitalized -- the thing that happens in movies and stories when someone has a serious accident or is about to die. I'd been too focused on surviving my symptoms to register the severity of what was happening. But lying in the reclined hospital bed, sipping my protein shake and feeling the best I had in a few days, I was overcome with gratitude and bliss. I'd soon return to my normal life, and I would not take it for granted anymore. My dreams of adopting a cat and traveling the world I would make a reality. I hadn't felt as excited or alive in ages. 
+They told me that I was to stay the night, and I realized that I'm being hospitalized, the thing that happens in movies and stories when someone has a serious accident or is about to die. I'd been too focused on surviving my symptoms to register the severity of what was happening. But lying in the reclined hospital bed, sipping my protein shake and feeling the best I had in a few days, I was overcome with gratitude and bliss. I'd soon return to my normal life, and I would not take it for granted anymore. My dreams of adopting a cat and traveling the world I would make a reality. I hadn't felt as excited or alive in ages. 
 
 To top it off, two close friends came to visit, bringing snacks, drinks, clothes, a phone charger, and even board games and books. Given how exhausted I was, we settled for watching the Olympics, and I just basked in their company. 
 
@@ -65,9 +67,9 @@ Things were finally looking up. It would probably take a few days to recover fro
 ## **Initial Recovery**
 ##### *(Weeks 1-7)*
 
-Once home, I rested. I ordered delivery every day, laid in bed watching the US Men's team eek out a victory over Serbia, and binged the Stormlight Archives on my e-reader. I took my antibiotics each day at noon and was improving. 
+Once home, I rested. I ordered delivery every day, laid in bed watching the US Men's basketball team eek out a victory over Serbia, and binged the Stormlight Archives on my e-reader. I took my antibiotics each day at noon and was improving. 
 
-The next week, I returned to work, except I could only sit for 10-15 minutes before the headaches returned, forcing me back to bed. I took another week off. I started taking caffeine pills to boost CSF production, electrolytes to help with hydration, and collagen to support membrane healing. I was determined to recover and get back to my normal life. My parents offered to fly over to take care of me, but I declined -- I'd be better in no time. The next week, my tolerance had only increased to 30 minutes, and I had to take more time off. 
+The next week, I returned to work at home, except I could only sit for 10-15 minutes before the headaches returned, forcing me back to bed. I took another week off. I started taking caffeine pills to boost CSF production, electrolytes to help with hydration, and collagen to support membrane healing. I was determined to recover and get back to my normal life. My parents offered to fly over to take care of me, but I declined -- I'd be better in no time. The next week, my tolerance had only increased to 30 minutes, and I had to take more time off. 
 
 Over the next month, I steadily improved. By week four, I started socializing in short sessions. In week five, I returned to work and even made it to a gaming convention, albeit with an hourly side quest of finding random rooms to lie down in. By week six, I could sit and work for over an hour at a time without issue. 
 
@@ -129,7 +131,7 @@ Except the next week, my friend arrived. The friend that I had promised two mont
 
 Devastation, once again. My parents had flown over and cared for me for a combined six weeks, yet I still couldn't take care of myself for a couple weeks. I didn't have much time to dwell on this as another friend arrived the next week. This time, I set clear expectations that I would be laying down almost the entire visit. By the time he left, my headaches had eased from the 4/10 pain to a dull throb. 
 
-This was when my parents first floated the idea of moving home to Maryland. It was clear that this leak wasn't a minor setback -- it was now a chronic medical issue that could take many more months to heal. And if I botched the recovery, I might be dealing with the consequences for years. 
+This was when my parents first floated the idea of moving home to Maryland. It was clear that this leak wasn't a minor setback. It was now a chronic medical issue that could take many more months to heal. And if I botched the recovery, I might be dealing with the consequences for years. 
 
 Initially, I waved off the idea as I valued my independence and loved city life. But after a series of particularly painful workdays, I decided that my parents were right. Health was more important than work. If I could take a couple months off work and rest under my parents' care, then I'd have everything I need to recover. Plus, I'd be closer to New York and could move there in the spring. 
 
@@ -148,11 +150,11 @@ Instead, it felt like I was being airlifted out of a ballgame in the middle of a
 ## **Moving Home**
 ##### *(Week 19)*
 
-Five suitcases, two cardboard boxes, two backpacks, and one guitar case. This was all that I had to my name. My dad piled as many pieces as he could onto a trolley, determined to make it from our Uber dropoff to inside the train station in one go. The thing is, my PC that I carefully built last summer was at the top of the pile. As my dad struggled against the wobbly trolley wheels, my heart dropped when the mountain of luggage came crashing down. My poor PC took a full five-foot fall -- then another as my stubborn-as-a-mule dad did it all again. Eventually, we made two separate, minute-long trips into the station and boarded our train. 
+Five suitcases, two cardboard boxes, two backpacks, and one guitar case. This was all that I had to my name. My dad piled as many pieces as he could onto a trolley, determined to make it from our Uber dropoff to inside the train station in one go. The thing is, my PC that I carefully built last summer was at the top of the pile. As my dad struggled against the wobbly trolley wheels, my heart dropped when the mountain of luggage came crashing down. My poor PC took a full five-foot fall -- then another as my stubborn-as-a-mule dad did it all again. Eventually, we made the two separate, minute-long trips into the station and boarded our train. 
 
-In order to lie down for the three-day ride, I had booked a roomette -- a small room with two seats facing each other that could transform into a set of bunk beds. As I laid in the lower bunk, occasionally sitting up to watch the hills dotted with snow whizz by, I entered a period of limbo where I finally had the space to reflect on my journey thus far and on my time in Seattle. Also, no wifi. 
+In order to lie down for the three-day ride, I had booked a roomette, a small room with two seats facing each other that could transform into a set of bunk beds. As I laid in the lower bunk, occasionally sitting up to watch the hills dotted with snow whizz by, I entered a period of limbo where I finally had the space to reflect on my journey thus far and on my time in Seattle. Also, no wifi. 
 
-After a few fancy-sounding but average-tasting three-course meals, we arrived in Chicago for our transfer. In the station, we got to ride on the red cap vehicles that zipped around the station, flying past other rides at way above the non-existent speed limit. Then it was back to the second and final train. 
+After a few fancy-sounding but average-tasting three-course meals, we arrived in Chicago for our transfer. In the station, we got to ride on the red cap vehicles that zipped around the station, flying past other riders at way above the non-existent speed limit. Then it was back to the second and final train. 
 
 When we finally arrived in DC, my mom was waiting in the familiar silver SUV to shuttle my father, my possibly broken PC, and my definitely broken body back home. When I stepped out from the leaned back front seat into our home and onto our couch, I felt ready. Ready to rest and finally recover from the tiny hole in my lower back. 
 
@@ -161,7 +163,7 @@ When we finally arrived in DC, my mom was waiting in the familiar silver SUV to 
 
 Over the next few days, I enjoyed the comfort of a home with two parents helping with meals, laundry, and everything else that I had to do myself back in Seattle. My job was to stay in bed as much as possible and nurse the throbbing headaches that had come back home with me. 
 
-Soon after I arrived, we had our long-awaited visit with a neurologist who embodied the kindness I think of when I picture a good doctor. She wrote the note for my three-month work leave and prescribed steroids to help with recovery, but they just made me dizzy. Though the roids didn't work out, we tried several Chinese remedies like pressure point massages, moxibustion, and supplements shipped from China. 
+Soon after I arrived, we had our long-awaited visit with a neurologist who embodied the kindness I think of when I picture a good doctor. She wrote the note for my now three-month work leave and prescribed steroids to help with recovery, but they just made me dizzy. Though the roids didn't work out, we tried several Chinese remedies like pressure point massages, moxibustion, and supplements shipped from China. 
 
 By far my favorite remedy came in the form of a cat. A literal cat. For my Birthday / Christmas, my family surprised me by adopting a striped orange tabby cat we named Cary because she was orange like a carrot. When my brother went back to college and my parents were at work, Cary kept me company, laying next to my feet in bed. She'd quickly become my closest friend in the loneliest year of my life. 
 
@@ -178,9 +180,11 @@ To explain blood patches real quick, they are the go-to solution for CSF leaks. 
 
 The risks with blood patches are that they might result in another puncture in the membrane if the doctors aren't careful, and it's also just an invasive procedure that you'd want to avoid if possible. But if I didn't recover from 2-3 months of bedrest, home-cooked meals, and snuggles with Cary, then we decided it would be worth going for the patch. 
 
-However, as we learned back in Seattle, there was a series of scans and appointments before you can do the procedure. Here's a quick recap of the appointment scheduling flurry, part two. First, my neurologist referred me to the CSF leak clinic at Georgetown, where a neurosurgeon ordered an MR Myelogram to check if I still had an active leak. My neurologist also ordered a MR Venogram to rule out venous thrombosis, so we scheduled that too. Since my last head MRI was from several months ago, my mom wanted to repeat that test, but the appointments got snowed out. 
+However, as we learned back in Seattle, there was a series of scans and appointments before you can do the procedure. Here's a quick recap of the appointment scheduling flurry, part two. 
 
-When we finally went in for the blood patch consultation, we were able to get the procedure scheduled for mid-March -- seven and a half months after my initial lumbar puncture. But again, this was all for plan B, only if resting didn't work. 
+First, my neurologist referred me to the CSF leak clinic at Georgetown, where a neurosurgeon ordered an MR Myelogram to check if I still had an active leak. My neurologist also ordered a MR Venogram to rule out venous thrombosis, so we scheduled that too. Since my last head MRI was from several months ago, my mom wanted to repeat that test, but the appointments got snowed out. 
+
+When we finally went in for the blood patch consultation, we were able to get the procedure scheduled for mid-March, seven and a half months after my initial lumbar puncture. But again, this was all for plan B, only if resting didn't work. 
 
 Resting did not work. At least not fast enough. 
 
@@ -193,7 +197,7 @@ In a last ditch effect, we tried complete bedrest because maybe the little uptim
 
 On the day of the blood patch, we were late because I was practicing getting into and out of the car without bending my back. My dad had folded down the rear seats and placed my college mattress topper on top for a makeshift bed that was surprisingly comfortable. 
 
-The hour drive to the hospital felt impossibly long. I was in an anxious zen state, thinking of all the things that could go wrong and what we needed to ask about before the patch, but also feeling a calmness and acceptance that this surgery was likely the conclusion to my story. An ending was finally in sight. There was sunlight streamed through the rear windows, and classical music flowed from the radio. I was ready. 
+The hour drive to the hospital felt impossibly long. I was in an anxious zen state, thinking of all the things that could go wrong and what we needed to ask about before the patch, but also feeling a calmness and acceptance that this surgery was likely the conclusion to my story. An ending was finally in sight. Sunlight streamed through the rear windows, and classical music flowed from the radio. I was ready. 
 
 At the hospital, we went through three check-ins before being called into room 32, where a flurry of nurses took measurements and poked me with IVs. I had a midline in my upper right arm between my bicep and tricep for the blood draw, and then a regular IV on the back of my left hand. 
 
@@ -201,9 +205,9 @@ At noon, things slowed down, and we started waiting for our appointment schedule
 
 I rolled from my stretcher onto the operating table, and my bare ass was quickly covered by a towel. An oxygen pump was placed in my nose, heart monitors on my chest, and the IV and midline were hooked up. 
 
-They injected me with two medications, one for anxiety and another for pain management. Next, they numbed my back with a series of six patches -- three for each injection site -- that stung before sapping away any sensations in their respective regions. The surgeon told me to tell him when I felt a 6/10 pain so he'd know when to stop injecting blood. They moved me in and out the CT machine, and the operation began. 
+They injected me with two medications, one for anxiety and another for pain management. Next, they numbed my back with a series of six patches -- three for each injection site -- that stung before sapping away any sensations in their respective regions. The surgeon told me to tell him when I felt a 6/10 pain so he'd know when to stop injecting blood. They moved me in and out of the CT machine, and the operation began. 
 
-The surgeon started injected blood into my mid-back, and it felt fine. It actually didn't feel like much at all. The CT scans and injection continued until we hit the 20mL maximum. The second injection at my lower back felt less fine. He asked my pain, and I said 2/10. A few seconds later, 4/10, and I could feel my upper left leg tingling. He asked again, and I said it was the same, but he still stopped. We had hit the 30mL maximum for the total amount of blood to be injected. I would soon find out why that limit mattered. 
+The surgeon started injecting blood into my mid-back, and it felt fine. It actually didn't feel like much at all. The CT scans and injection continued until we hit the 20mL maximum. The second injection at my lower back felt less fine. He asked my pain, and I said 2/10. A few seconds later, 4/10, and I could feel my upper left leg tingling. He asked again, and I said it was the same, but he still stopped. We had hit the 30mL maximum for the total amount of blood to be injected. I would soon find out why that limit mattered. 
 
 I rolled back onto the stretcher and was returned to room 32. It was 2:45pm. The procedure took longer than I expected, though the actual injection only took maybe five minutes. 
 
@@ -215,7 +219,7 @@ When my dad finally arrived at the pickup area, a wheelchair was called for me. 
 
 After the painfully slow five minutes, I crawled into the back of our SUV, disregarding what I had practiced in the morning in a rush to lie down. It was another ten minutes before the back pain started to resolve. 
 
-The ride home from a big event always feels shorter than the ride there. What made this return even better was that I was finally allowed to drink water and eat after fasting from 9am. And because those past nine hours marked the start of the final chapter in my journey. Or at least, what I thought would be the final chapter. 
+The ride home from a big event always feels shorter than the ride there. What made this return even better was that I was finally allowed to drink water and eat after fasting from 9am. And also because these past nine hours marked the start of the final chapter in my journey. Or at least, what I thought would be the final chapter. 
 
 ## **Returning to Work**
 ##### *(Weeks 33-43)*
@@ -241,7 +245,7 @@ Something had to change. If I kept working like this, my recovery could take man
 
 On the first Monday of June, I woke up with a pounding headache after hanging out with a friend the day before. It also happened to be my first day working full-time again. With the way I felt, I couldn't imagine getting through a full day of work, let alone a part-time day. That's when I realized that I needed to quit my job. 
 
-I walked slow laps around our backyard that morning, weighing the pros and cons of leaving. After an hour of back and forth, I came to the conclusion that I should quit. I'll save the details for another post, but here's the short version -- my health matters way more than my job, and the past four-day weekend made it clear that resting without work helped. 
+I walked slow laps around our backyard that morning, weighing the pros and cons of leaving. After an hour of back and forth, I came to the conclusion that I should quit. I'll save the details for another post, but here's the short version: my health matters way more than my job, and the past four-day weekend made it clear that resting without work helped. 
 
 It was a tough decision though, as I had a very well-paying job in a tough job market, and I loved the team and product, and even the work at times. But at the end of the day, I needed to be healthy to be able to enjoy any of it. Plus, I'd never had a gap year in my life, and I had a lengthy backlog of hobbies, projects, and travel that I'd been wanting to do. After suddenly losing a year of my prime, what better time to live a little life than now?
 
@@ -262,7 +266,7 @@ And so, this brings us to the present day. I still have up-days and down-days. S
 
 Sometimes, it feels like I've lost a year of my life -- a year I could've spent working in a dream city and traveling with new friends. Instead, I've been in bed, cycling through false hopes that two weeks off work, a move home, or surgery would fix everything. If only I had declined the lumbar puncture... If only I had recovered properly the first week, or returned to work a little slower, then maybe my life would be normal. 
 
-Just a few days ago, the calendar flipped to a new page: August 1st -- exactly one year since that fateful day. One whole year of uncertainty. Of hospital beds and IV drips. Of hope lost, then found again. Of thousands of hours lying awake in bed, yet still living in a dream. Of parental love. Of saying farewell. Of getting used to a new life. A new me. 
+Just a few days ago, the calendar flipped to a new page: August 1st. Exactly one year since that fateful day. One whole year of uncertainty. Of hospital beds and IV drips. Of hope lost, then found again. Of thousands of hours lying awake in bed, yet still living in a dream. Of parental love. Of saying farewell. Of getting used to a new life. A new me. 
 
 Over the past year, I've come to realize, accept, and embrace that **this is** my new normal. Lying in bed with Cary, enjoying the company of my aging parents, noticing the things I once took for granted. I've started to love the life I've been given, and can feel that I've grown into a fuller person through this experience. 
 
