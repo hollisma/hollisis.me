@@ -1,10 +1,14 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
 import styled from 'styled-components'
+import Prose from '../styles/prose'
 import { Layout, SEO, Icon } from '../components'
 import list_item from '../styles/list-item'
 
-const Section = list_item.section
+const Section = styled(list_item.section)`
+  margin-bottom: 1.5em;
+  padding: 2em 2.5em 1em;
+`
 
 const TitleSection = styled.div`
   display: flex;
@@ -14,8 +18,10 @@ const TitleSection = styled.div`
 `
 const Title = list_item.title
 
-const UnderTitle = list_item.under_title
-const Description = list_item.description
+const UnderTitle = styled(list_item.under_title)`
+  padding-bottom: 0em;
+`
+const Description = styled(Prose)``
 
 const QuickInfo = list_item.flex_row_container
 const MiniDescription = list_item.left_item

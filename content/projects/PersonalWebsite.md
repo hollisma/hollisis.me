@@ -1,5 +1,5 @@
 ---
-title: Creative and Punny Title
+title: hollisis.me
 description: Personal Website
 github: 'https://github.com/hollisma/website_v1'
 external: '/'

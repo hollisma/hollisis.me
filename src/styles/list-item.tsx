@@ -5,7 +5,9 @@ const list_item = {
     display: flex;
     flex-direction: column;
     width: 87.5%;
-    background-color: #fea;
+    background-color: ${({ theme }) => theme.colors.surface};
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    box-shadow: ${({ theme }) => theme.shadows.sm};
     padding: 2em 3em;
     margin-bottom: 3em;
     border-radius: 2em;

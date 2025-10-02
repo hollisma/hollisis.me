@@ -5,24 +5,22 @@ import { Layout, SEO } from '../components'
 import { list_item } from '../styles'
 
 const Section = styled(list_item.section)`
-  transition: all 0.2s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
   &:hover {
-    background-color: #ed9;
+    transform: translateY(-8px);
+    box-shadow: ${({ theme }) => theme.shadows.lg};
   }
 `
 const BlogLink = styled(Link)`
   font-size: 2em;
   font-weight: bold;
-  color: black;
+  line-height: 1.5em;
+  color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
 `
-const DateStr = styled.p`
-  font-family: Merriweather;
-`
+const DateStr = styled.p``
 const Post = styled.p`
   margin-top: 0.75em;
-  font-size: 1.25em;
-  font-family: Merriweather;
   line-height: 1.5em;
 `
 

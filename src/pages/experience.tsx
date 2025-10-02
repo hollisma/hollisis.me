@@ -1,16 +1,24 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
 import styled from 'styled-components'
+import Prose from '../styles/prose'
 import { Layout, SEO } from '../components'
 import { list_item } from '../styles'
 
-const Section = list_item.section
+const Section = styled(list_item.section)`
+  margin-bottom: 1.5em;
+  padding: 2em 2.5em 1em;
+`
 const Title = list_item.title
-const UnderTitle = list_item.under_title
-const Description = list_item.description
+const UnderTitle = styled(list_item.under_title)`
+  padding-bottom: 0em;
+`
+const Description = styled(Prose)`
+  line-height: 1.65em;
+`
 
 const CompanyTech = styled(list_item.flex_row_container)`
-  width: 35em;
+  width: 30em;
 `
 const Company = list_item.left_item
 const Tech = list_item.right_item
@@ -31,17 +39,20 @@ const Technologies = styled.p``
 
 const Resume = styled.a`
   position: relative;
-  top: 2em;
+  top: 0em;
   right: 1em;
   float: right;
-  background-color: #4c4;
+  background-color: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.border};
   padding: 1em;
+  margin-bottom: 1em;
   border-radius: 0.5em;
   text-decoration: none;
-  color: blue;
-  font-weight: bold;
+  color: ${({ theme }) => theme.colors.accent};
+  font-weight: 600;
   &:hover {
-    filter: brightness(90%);
+    transform: translateY(-5px);
+    box-shadow: ${({ theme }) => theme.shadows.md};
   }
 `
 
@@ -104,6 +115,7 @@ const Experience = ({ data, location }: PageProps<Data>) => {
       >
         Resume
       </Resume>
+      {experiences}
       <Skills>
         <Languages>
           <b>Languages: </b>
@@ -114,7 +126,6 @@ const Experience = ({ data, location }: PageProps<Data>) => {
           {skills.tech}
         </Technologies>
       </Skills>
-      {experiences}
     </Layout>
   )
 }
@@ -125,7 +136,7 @@ export const pageQuery = graphql`
   {
     experiences: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/experience/" } }
-      sort: { fields: [frontmatter___order], order: ASC }
+      sort: { fields: [frontmatter___order], order: DESC }
     ) {
       edges {
         node {

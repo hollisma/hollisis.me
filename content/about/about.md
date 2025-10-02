@@ -1,15 +1,19 @@
-Hi there! I like programming, games, and learning new things. For the past 3 years I was working at Meta on smart glasses, and previously studied CS at Princeton. Now I'm taking a break to explore my own projects and learning. You can reach me at hollisleroyma at gmail dot com. 
+...and I like programming, gaming, and learning new things. 
+
+For the past 3 years, I was working at Meta on [smart glasses](https://www.meta.com/ai-glasses/meta-ray-ban-display/), and previously studied CS at Princeton. Now, I'm taking a break to explore my own projects and learning. You can reach me at hollisleroyma at gmail dot com. 
+
 ![Hollis Ma in NYC](/hollis_nyc.JPG " ")
 
-What I'm currently working on as of July '25:
-- Taking a break from work to explore some things
+What I'm currently working on as of October '25:
 - Recovering from a CSF leak
-- Blogging again
-- Learning Japanese
-- Playing guitar
-- Enjoying some games
+- Doing my first Inktober!
+- Exploring game development and doing my first game jam!
 - Updating this site
+- Getting back into running and working out
+- Guitar
+- Enjoying Overwatch and Hades 2
 
+<!-- - Learning Japanese -->
 <!-- - Learning about computer vision, business, philosophy of mind, sociology of the internet, and NLP in school -->
 <!-- - Doing research on GANs for text generation  -->
 <!-- - Taking care of baby chicks -->

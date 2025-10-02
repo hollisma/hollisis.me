@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
 import styled from 'styled-components'
+import Prose from '../styles/prose'
 import { Layout, SEO, Icon } from '../components'
 import { list_item } from '../styles'
 
@@ -12,7 +13,7 @@ const Subject = styled.div`
 `
 const Section = styled(list_item.section)`
   margin-bottom: 1.5em;
-  padding: 1.5em 2.5em;
+  padding: 2em 2.5em 1em;
 `
 const Title = list_item.title
 
@@ -25,7 +26,7 @@ const SecondTitle = styled(Title)`
   font-size: 1.5em;
 `
 const UnderTitle = styled(list_item.under_title)`
-  padding-bottom: 0.5em;
+  padding-bottom: 0em;
 `
 const IconLink = styled.a`
   svg {
@@ -33,11 +34,10 @@ const IconLink = styled.a`
     height: 20px;
   }
 `
-const Description = styled.p`
+const Description = styled(Prose)`
+  line-height: 1.5em;
   a {
     text-decoration: none;
-    color: blue;
-    font-weight: bold;
   }
 `
 

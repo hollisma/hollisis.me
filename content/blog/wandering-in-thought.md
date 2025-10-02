@@ -15,7 +15,7 @@ All of time to sit and think
 Through mind's armor find the chinks
 
 Wandering through yet deeper mists
-See reflections that were missed
+Seek reflections that were missed
 Learn from woes; my past mistakes
 Find the masks I've had to fake
 

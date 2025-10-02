@@ -1,15 +1,13 @@
 import React from 'react'
 import { graphql, PageRendererProps, Link } from 'gatsby'
 import styled, { css } from 'styled-components'
+import Prose from '../styles/prose'
 import { Layout, SEO } from '../components'
 import { list_item } from '../styles'
 
-const Section = styled(list_item.section)`
-  font-family: Merriweather;
-`
+const Section = styled(list_item.section)``
 const Title = styled.h1`
   font-size: 2.5em;
-  font-family: Montserrat;
   font-weight: 1000;
 `
 const StyledDate = styled.h3`
@@ -17,11 +15,9 @@ const StyledDate = styled.h3`
   font-size: 1em;
   margin-top: 0.25em;
 `
-const Post = styled.div<{ isPoem?: boolean }>`
+const Post = styled(Prose)<{ isPoem?: boolean }>`
   margin-top: 0.5em;
-  font-size: 1.15em;
   list-style-position: inside;
-  line-height: 1.75em;
   p {
     margin: 1.5em 0;
   }
@@ -44,9 +40,7 @@ const Post = styled.div<{ isPoem?: boolean }>`
   li {
     margin: 1em 0;
   }
-  a {
-    color: green;
-  }
+  a { color: ${({ theme }) => theme.colors.accent}; }
   .anchor {
     display: inline-block;
     position: relative;
@@ -77,14 +71,18 @@ const LinkSection = styled.div`
   justify-content: space-between;
 `
 const StyledLink = styled(Link)`
-  color: black;
-  text-decoration: none;
   background: #ccf;
-  padding: 0.75em;
-  border-radius: 0.5em;
-  font-weight: bold;
-  font-size: 1.1em;
   max-width: 300px;
+  background-color: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  box-shadow: ${({ theme }) => theme.shadows.sm};
+  padding: 1em 2em;
+  border-radius: 1em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: ${({ theme }) => theme.shadows.lg};
+  }
 `
 const ForwardLink = styled(StyledLink)`
   float: right;

@@ -6,28 +6,35 @@ import { navLinks } from '../config'
 const StyledLink = styled(Link)<{ current: string }>`
   display: flex;
   position: relative;
-  padding: 0 3vw;
+  padding: 0 1rem;
   height: 100%;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1em;
   text-decoration: none;
-  color: blue;
-  transition: all 0.2s ease;
-  background-color: #abf;
+  color: ${({ theme }) => theme.colors.text};
+  transition: color 0.15s ease, opacity 0.2s ease;
+  background: transparent;
   ${props =>
     props.current === 'true'
       ? css`
-          background: #92a1d6 !important;
-          color: #00b;
+          color: ${props => props.theme.colors.accent};
+          &:after { // Bar below active navbar section
+            content: '';
+            position: absolute;
+            left: 1rem;
+            right: 1rem;
+            bottom: 10px;
+            height: 2px;
+            background: ${props => props.theme.colors.accent};
+            border-radius: 1px;
+          }
         `
       : css`
           &:hover {
-            -webkit-filter: brightness(93%);
+            opacity: 0.6;
           }
         `}
-  p {
-    margin: 0;
-  }
+  p { margin: 0; }
 `
 
 const LinkContainer = styled.div<{ scrolled: boolean }>`
@@ -35,13 +42,17 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
-  height: ${props => (props.scrolled ? '3.5em' : '4.5em')};
+  height: ${props => (props.scrolled ? '56px' : '72px')};
   width: 100%;
-  z-index: 1;
-  background-color: #abf;
+  z-index: 10;
+  background: rgba(255, 255, 255, ${props => (props.scrolled ? 0.8 : 0.6)});
+  backdrop-filter: saturate(180%) blur(${props => (props.scrolled ? '10px' : '8px')});
+  -webkit-backdrop-filter: saturate(180%) blur(${props => (props.scrolled ? '10px' : '8px')});
+  border-bottom: ${props => (props.scrolled ? '1px' : '2px')} solid ${({ theme }) => theme.colors.border};
   align-items: center;
+  justify-content: center;
   transition: all 0.2s ease-out;
-  font-weight: 700;
+  font-weight: 600;
 `
 
 const Navbar = ({ location }: any) => {

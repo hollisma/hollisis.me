@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, PageProps, Link } from 'gatsby'
 import styled from 'styled-components'
+import Prose from '../styles/prose'
 import { Layout, SEO } from '../components'
 import { navLinks } from '../config'
 
@@ -19,25 +20,20 @@ type Data = {
   }
 }
 
-const NoBottomPaddingLayout = styled(Layout)`
-  background-color: blue !important;
-`
+const NoBottomPaddingLayout = styled(Layout)``
 const Header = styled.h1`
-  font-size: 2.5em;
+  font-size: 2em;
 `
-const About = styled.div`
-  font-size: 1.5em;
-  line-height: 1.5em;
+const About = styled(Prose)`
   img {
     max-width: 800px;
     width: 100%;
     height: auto;
     display: block;
     margin: 2em auto;
-    border-radius: 1em;
-  }
-  p {
-    margin: 0;
+    border: 3px solid ${({ theme }) => theme.colors.border};
+    border-radius: 1.5em;
+    box-shadow: ${({ theme }) => theme.shadows.md};
   }
   figure {
     margin: 1.25em;
@@ -54,20 +50,16 @@ const About = styled.div`
   }
 `
 const StyledLink = styled(Link)`
-  display: block;
-  background-color: #8d9;
-  margin: 1em 0;
-  padding: 25px;
-  font-size: 24px;
-  border-radius: 0.5em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0.5em 0;
+  padding: 0;
+  font-size: 1.125rem;
   text-decoration: none;
-  color: #f33;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  &:hover {
-    background-color: #6b7;
-    color: #c00;
-  }
+  color: ${({ theme }) => theme.colors.accent};
+  font-weight: 600;
+  &:hover { text-decoration: underline; }
 `
 
 const HomePage = ({ data, location }: PageProps<Data>) => {
@@ -78,16 +70,9 @@ const HomePage = ({ data, location }: PageProps<Data>) => {
   return (
     <NoBottomPaddingLayout location={location}>
       <SEO title='Hollis Ma' />
-      <Header>{description} :)</Header>
+      <Header>Hi there! I'm Hollis...</Header>
+      {/* <Header>{description} :)</Header> */}
       <About dangerouslySetInnerHTML={{ __html: html }} />
-      {/* {navLinks.map(
-        ({ name, url }) =>
-          name !== 'About' && (
-            <StyledLink to={url} key={name}>
-              {name}
-            </StyledLink>
-          )
-      )} */}
     </NoBottomPaddingLayout>
   )
 }

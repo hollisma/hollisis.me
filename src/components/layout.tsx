@@ -10,22 +10,18 @@ import Navbar from './navbar'
 
 const Container = styled.div<{ size: string }>`
   width: auto;
-  max-width: ${props => (props.size == 'large' ? '75em' : '50em')};
-  margin: 7em auto 4em;
+  max-width: ${props => (props.size == 'large' ? '80ch' : '72ch')};
+  margin: 6em auto 4em;
   ${props =>
     props.size == 'large' &&
     media(1440)`
-      margin: 7em 5em 4em;
+      margin: 6em 5em 4em;
     `}
   ${media(900)`
-    margin-top: 5em;
+    margin-top: 4.5em;
   `}
-  padding: 3em 5vw;
-  background-color: #afb;
-  border-radius: 2vh;
+  padding: 0 5vw 3em;
   justify-self: center;
-  font-family: Montserrat;
-  font-weight: normal;
 `
 
 type LayoutProps = {
