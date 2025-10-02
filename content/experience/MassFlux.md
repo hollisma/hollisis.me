@@ -1,7 +1,7 @@
 ---
-title: 'Software Engineer'
-company: 'MassFlux'
-tech: 'InfluxDB, Grafana, Node.js, Express, Docker'
+title: 'MassFlux'
+subtitle: 'Software Engineer'
+tech: 'InfluxDB, Grafana, Node, Docker'
 range: "Feb '20 - Apr '20"
 order: 2
 ---

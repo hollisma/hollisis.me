@@ -1,7 +1,7 @@
 ---
 title: Software Development Intern
-company: Artisan Data Consulting
-tech: D3.js, React, Angular, Flask, SQLAlchemy
+subtitle: Artisan Data Consulting
+tech: D3.js, React, Flask, SQLAlchemy
 range: "Jun '19 - Aug '19"
 order: 0
 ---

@@ -8,4 +8,4 @@ order: 1
 ---
 
 - Built (with 3 other friends) a 2.5D Shooter with a Pacman theme featuring waves of enemies, powerups, leaderboard functionality, and HUDs
-- Won "Best Gameplay Award" out of 36 graphics oriented projects
+- Won "Best Gameplay Award" out of 36 graphics projects

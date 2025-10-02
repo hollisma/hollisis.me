@@ -1,6 +1,6 @@
 ---
-title: Co-Director
-company: HackPrinceton
+title: HackPrinceton
+subtitle: Co-Director
 tech: Leadership
 range: "May '20 - Apr '21"
 order: 5

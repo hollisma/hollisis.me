@@ -1,7 +1,7 @@
 ---
-title: Co-founder
-company: DayZero
-tech: MongoDB, Express, React, Node.js, Python
+title: DayZero
+subtitle: Co-founder
+tech: MongoDB, Express, React, Node, Python
 range: "May '19 - Jan '20"
 order: 1
 ---

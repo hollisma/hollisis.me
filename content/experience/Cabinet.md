@@ -1,6 +1,6 @@
 ---
-title: Software Development Research Intern
-company: Cabinet, Inc.
+title: Software Dev Research Intern
+subtitle: Cabinet, Inc.
 tech: Python, TypeScript
 range: "Jun '20 - Sep '20"
 order: 4

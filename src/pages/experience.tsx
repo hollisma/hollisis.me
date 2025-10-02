@@ -18,9 +18,9 @@ const Description = styled(Prose)`
 `
 
 const CompanyTech = styled(list_item.flex_row_container)`
-  width: 30em;
+  width: 33em;
 `
-const Company = list_item.left_item
+const Subtitle = list_item.left_item
 const Tech = list_item.right_item
 const Vert = list_item.vert_bar
 const Range = styled.h3`
@@ -65,7 +65,7 @@ type Data = {
         }
         frontmatter: {
           title: string
-          company: string
+          subtitle: string
           tech: string
           range: string
           languages: string
@@ -82,7 +82,7 @@ const Experience = ({ data, location }: PageProps<Data>) => {
 
   const experiences = edges!.map(({ node }, i) => {
     const { frontmatter, html } = node
-    const { title, company, tech, range, languages } = frontmatter
+    const { title, subtitle, tech, range, languages } = frontmatter
     if (languages) {
       skills.tech = tech
       skills.languages = languages
@@ -94,7 +94,7 @@ const Experience = ({ data, location }: PageProps<Data>) => {
         <Title>{title}</Title>
         <UnderTitle>
           <CompanyTech>
-            <Company>{company}</Company>
+            <Subtitle>{subtitle}</Subtitle>
             <Vert>|</Vert>
             <Tech>{tech}</Tech>
           </CompanyTech>
@@ -142,7 +142,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            company
+            subtitle
             tech
             range
             languages

@@ -1,6 +1,6 @@
 ---
 title: Computer Science TA
-company: Princeton CS Department
+subtitle: Princeton CS Department
 tech: Java, C, Assembly
 range: "Sep '19 - May '20"
 order: 3
