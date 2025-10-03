@@ -5,13 +5,13 @@ For the past 3 years, I was working at Meta on [smart glasses](https://www.meta.
 ![Hollis Ma in NYC](/hollis_nyc.JPG " ")
 
 What I'm currently working on as of October '25:
-- Recovering from a CSF leak
+- Recovering from a [CSF leak](/blog/my-csf-leak-journey/)
 - Doing my first [Inktober!](/art)
 - Exploring game development and doing my first game jam!
 - Updating this site
 - Getting back into running and working out
-- Guitar
-- Enjoying Overwatch and Hades 2
+- Remembering how to play guitar
+- Enjoying Overwatch, Hades 2, Silksong
 
 <!-- - Learning Japanese -->
 <!-- - Learning about computer vision, business, philosophy of mind, sociology of the internet, and NLP in school -->
