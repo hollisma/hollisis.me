@@ -120,7 +120,7 @@ export const pageQuery = graphql`
   {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___order], order: ASC }
+      sort: { fields: [frontmatter___order], order: DESC }
     ) {
       edges {
         node {

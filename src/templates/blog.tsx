@@ -1,13 +1,15 @@
 import React from 'react'
 import { graphql, PageRendererProps, Link } from 'gatsby'
 import styled, { css } from 'styled-components'
-import Prose from '../styles/prose'
 import { Layout, SEO } from '../components'
 import { list_item } from '../styles'
 
-const Section = styled(list_item.section)``
+const Section = styled(list_item.section)`
+  font-family: Merriweather;
+`
 const Title = styled.h1`
   font-size: 2.5em;
+  font-family: Montserrat;
   font-weight: 1000;
 `
 const StyledDate = styled.h3`
@@ -15,9 +17,11 @@ const StyledDate = styled.h3`
   font-size: 1em;
   margin-top: 0.25em;
 `
-const Post = styled(Prose)<{ isPoem?: boolean }>`
+const Post = styled.div<{ isPoem?: boolean }>`
   margin-top: 0.5em;
+  font-size: 1.15em;
   list-style-position: inside;
+  line-height: 1.75em;
   p {
     margin: 1.5em 0;
   }
@@ -40,7 +44,9 @@ const Post = styled(Prose)<{ isPoem?: boolean }>`
   li {
     margin: 1em 0;
   }
-  a { color: ${({ theme }) => theme.colors.accent}; }
+  a {
+    color: green;
+  }
   .anchor {
     display: inline-block;
     position: relative;

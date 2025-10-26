@@ -6,8 +6,7 @@ For the past 3 years, I was working at Meta on [smart glasses](https://www.meta.
 
 What I'm currently working on as of October '25:
 - Recovering from a [CSF leak](/blog/my-csf-leak-journey/)
-- Doing my first [Inktober!](/art)
-- Exploring game development and doing my first game jam!
+- Exploring game development and doing [game jams](https://masiloh.itch.io/)!
 - Updating this site
 - Getting back into running and working out
 - Remembering how to play guitar

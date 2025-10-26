@@ -49,6 +49,3 @@ const Prose = styled.div`
 
 export default Prose
 
-
-
-

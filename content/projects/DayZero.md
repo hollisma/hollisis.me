@@ -1,11 +1,10 @@
 ---
 title: DayZero
-subtitle: Co-founder
-tech: MongoDB, Express, React, Node, Python
-range: "May '19 - Jan '20"
-order: 1
+description: Friending Platform
+github: 'https://github.com/hollisma/DayZero'
+tech: React, MongoDB, Node
+order: 4.5
 ---
 
 - Platform to find friends based on interests and time availability, launched to 200+ Princeton users and dozens of matches created
-- Led team of 5 in design and creation of full stack social media platform, writing 6000+ lines
 - Developed algorithm to match users based on several weighted factors and wrote scripts to analyze/clean data on a daily basis
