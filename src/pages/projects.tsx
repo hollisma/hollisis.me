@@ -36,11 +36,17 @@ const Links = styled.div`
   }
 `
 const IconLink = styled.a`
-  padding: 5px;
+  padding: 0px 5px;
   svg {
     width: 20px;
     height: 20px;
   }
+`
+const Date = styled.h3`
+  font-weight: 100;
+  font-size: 1rem;
+  font-style: italic;
+  padding-bottom: 20px;
 `
 
 type Data = {
@@ -56,6 +62,7 @@ type Data = {
           github: string
           external: string
           tech: string
+          date: string
         }
         html: string
       }
@@ -72,7 +79,7 @@ const Projects = ({ data, location }: PageProps<Data>) => {
       {edges &&
         edges.map(({ node }, i) => {
           const { frontmatter, html } = node
-          const { title, description, github, external, tech } = frontmatter
+          const { title, description, github, external, tech, date } = frontmatter
 
           return (
             <Section key={i}>
@@ -105,6 +112,7 @@ const Projects = ({ data, location }: PageProps<Data>) => {
                   <Vert>|</Vert>
                   <Tech>{tech}</Tech>
                 </QuickInfo>
+                <Date>{date}</Date>
               </UnderTitle>
               <Description dangerouslySetInnerHTML={{ __html: html }} />
             </Section>
@@ -130,6 +138,7 @@ export const pageQuery = graphql`
             github
             external
             tech
+            date
           }
           html
         }

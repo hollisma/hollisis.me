@@ -4,7 +4,8 @@ description: Applied Linear Algebra
 github: ''
 external: '../education/Least_Squares_Analysis_of_Smash.pdf'
 tech: MATLAB, Python
-order: 1
+date: May '19
+order: 0
 ---
 
 - Applied least squares regression to manually gathered data for the popular game Super Smash Bros Ultimate to determine which type of playstyle was most correlated with a higher tier list ranking

@@ -3,6 +3,7 @@ title: LeaFairy
 description: Game
 external: https://masiloh.itch.io/leafairy
 tech: Godot, Aseprite
+date: Nov '25
 order: 8
 ---
 

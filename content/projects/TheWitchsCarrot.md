@@ -3,6 +3,7 @@ title: The Witch's Carrot
 description: Game
 external: https://masiloh.itch.io/the-witchs-carrot
 tech: Godot, Aseprite
+date: Oct '25
 order: 7
 ---
 

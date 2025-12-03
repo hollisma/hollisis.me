@@ -4,6 +4,7 @@ description: ML Music Rater
 github: 'https://github.com/hollisma/musicToMyEarz'
 external: ''
 tech: Flask, NumPy, Pandas, Scikit-Learn
+date: Mar '20
 order: 2
 ---
 
