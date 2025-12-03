@@ -9,8 +9,8 @@ What I'm currently working on as of October '25:
 - Exploring game development and doing [game jams](https://masiloh.itch.io/)!
 - Updating this site
 - Getting back into running and working out
-- Remembering how to play guitar
-- Enjoying Overwatch, Hades 2, Silksong
+- Playing guitar
+- Working my way through my gaming backlog
 
 <!-- - Learning Japanese -->
 <!-- - Learning about computer vision, business, philosophy of mind, sociology of the internet, and NLP in school -->

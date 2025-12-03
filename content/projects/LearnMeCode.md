@@ -2,7 +2,7 @@
 title: LearnMeCode
 description: Social Platform for New Devs
 github: 'https://github.com/hollisma/learnmecode'
-external: https://calm-fortress-13806.herokuapp.com/
+external: ''
 tech: MongoDB, Express, React, Redux, Node.js
 order: 0
 ---
