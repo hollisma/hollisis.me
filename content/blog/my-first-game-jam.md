@@ -1,6 +1,6 @@
 ---
 title: My First Game Jam
-date: '2026-10-27'
+date: '2025-10-27'
 ---
 
 Like many programmers, what sparked my interest in coding was video games. Also like many programmers, I'd never seriously worked on a game outside of school projects. My only experience building games had come from GridWorld in AP Computer Science and in my college's Computer Graphics class. 
