@@ -23,13 +23,19 @@ const TagList = styled.div`
   gap: 0.25em;
   margin-top: 0.75em;
 `
-const Tag = styled.span`
+const Tag = styled(Link)`
   font-size: 0.75em;
   padding: 0.1em 0.4em;
   border-radius: 4px;
   background: ${({ theme }) => theme.colors.surface};
   border: 2px solid ${({ theme }) => theme.colors.border};
-  color: ${({ theme }) => theme.colors.textMuted ?? theme.colors.text};
+  color: ${({ theme }) => theme.colors.muted ?? theme.colors.text};
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  &:hover {
+    background: ${({ theme }) => theme.colors.border};
+    border-color: ${({ theme }) => theme.colors.text};
+  }
 `
 const Post = styled.div<{ isPoem?: boolean }>`
   margin-top: 0.25em;
@@ -174,7 +180,9 @@ const Blog = ({ data, pageContext, location }: Props) => {
         {tags && tags.length > 0 && (
           <TagList>
             {tags.map((tag, i) => (
-              <Tag key={i}>{tag}</Tag>
+              <Tag key={i} to={`/blog/${tag}`}>
+                {tag}
+              </Tag>
             ))}
           </TagList>
         )}
