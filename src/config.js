@@ -28,10 +28,6 @@ module.exports = {
       url: '/',
     },
     {
-      name: 'Education',
-      url: '/education',
-    },
-    {
       name: 'Experience',
       url: '/experience',
     },
@@ -42,6 +38,10 @@ module.exports = {
     {
       name: 'Blog',
       url: '/blog',
+    },
+    {
+      name: 'Education',
+      url: '/education',
     },
     {
       name: 'Art',
