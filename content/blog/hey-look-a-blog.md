@@ -1,6 +1,7 @@
 ---
 title: Hey Look a Blog!
 date: '2020-05-27'
+tags: [meta]
 ---
 
 This is a blog post. For the longest time, I've wanted to write one of these in my very own blog. 

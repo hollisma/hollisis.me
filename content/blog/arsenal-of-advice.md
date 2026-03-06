@@ -1,6 +1,7 @@
 ---
 title: Arsenal of Advice
 date: '2020-07-01'
+tags: [essay]
 ---
 
 People usually think of advice as a shortcut in the race for whatever we're searching for. Once you find the ultimate piece of advice, all you have to do is follow it and you'll be set. But no, this isn't how advice works. Most advice is subjective and worked for a specific person in a specific moment for a specific reason, and the realization that their success stemmed from that piece of advice is often realized only in hindsight. Plus, for every source telling you to workout in the morning, there are a dozen more telling you to workout at night. When I was trying to build healthier habits, I read blog posts telling me to start slow and build one habit at a time while other blog posts told me to turbocharge my life and become the person I want to be in 10 years in 1 year, leaving me even more confused and lost than before. I only found out what worked for me after trying both approaches, so my advice to you is to apply advice to see if it works before wholeheartedly accepting it.

@@ -17,8 +17,22 @@ const StyledDate = styled.h3`
   font-size: 1em;
   margin-top: 0.25em;
 `
+const TagList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em;
+  margin-top: 0.75em;
+`
+const Tag = styled.span`
+  font-size: 0.75em;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  background: ${({ theme }) => theme.colors.surface};
+  border: 2px solid ${({ theme }) => theme.colors.border};
+  color: ${({ theme }) => theme.colors.textMuted ?? theme.colors.text};
+`
 const Post = styled.div<{ isPoem?: boolean }>`
-  margin-top: 0.5em;
+  margin-top: 0.25em;
   font-size: 1.15em;
   list-style-position: inside;
   line-height: 1.75em;
@@ -135,6 +149,7 @@ interface Props extends PageRendererProps {
         title: string
         date: string
         poem?: boolean
+        tags?: string[]
       }
       html: string
     }
@@ -143,7 +158,7 @@ interface Props extends PageRendererProps {
 
 const Blog = ({ data, pageContext, location }: Props) => {
   const { frontmatter, html } = data.markdownRemark!
-  const { title, date, poem } = frontmatter!
+  const { title, date, poem, tags } = frontmatter!
   const { previous, next } = pageContext
 
   const dateObj = new Date(date + 'T00:00')
@@ -156,6 +171,13 @@ const Blog = ({ data, pageContext, location }: Props) => {
       <Section>
         <Title>{title}</Title>
         <StyledDate>{dateStr}</StyledDate>
+        {tags && tags.length > 0 && (
+          <TagList>
+            {tags.map((tag, i) => (
+              <Tag key={i}>{tag}</Tag>
+            ))}
+          </TagList>
+        )}
         <Post isPoem={poem} dangerouslySetInnerHTML={{ __html: html }} />
       </Section>
       <LinkSection>
@@ -186,6 +208,7 @@ export const pageQuery = graphql`
         title
         date
         poem
+        tags
       }
       html
     }

@@ -1,6 +1,7 @@
 ---
 title: Purpose of Life
 date: '2020-06-05'
+tags: [essay]
 ---
 
 To pass on our genes, to make money and raise a family, to keep a bubble of order in the entropic universe, to build a sucessful company, to help those in need, to express oneself on a blank canvas with bristles attached to wood, to worship God, to worship the all-mighty all-powerful Pewdiepie, to plant a grape vine on Mars, to fight for what you believe in against a sea of adversity — these are all sources of meaning and fulfillment. Some may sound more fun or more relevant than others, but it is almost impossible to argue that my life goal is more meaningful than yours. So let's try and do just that.

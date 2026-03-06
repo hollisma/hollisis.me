@@ -1,6 +1,7 @@
 ---
 title: Bedrest Podcasts
 date: '2025-07-23'
+tags: [reflection]
 ---
 
 I was introduced to podcasts in early 2024 when I started training for a half marathon. Every morning, I went running and worked out to the same playlist and wanted to listen to something new, so I ventured into podcast land. I only really listened to 2 podcasts back then: *Huberman Lab* because I wanted to improve my health, and *Trash Taste* because I was watching a lot of anime at the time. 

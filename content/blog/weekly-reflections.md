@@ -1,6 +1,7 @@
 ---
 title: Weekly Reflections
 date: '2020-06-23'
+tags: [essay]
 ---
 
 I often go through my week just trying to work on the things I need to work on, and more-than-occassionally I end up watching youtube videos for hours on end. In the morning, I feel motivated to work, but then after lunch I feel like I've deserved a break so I watch a youtube video, and after that finishes, the food coma starts to kick in, so another video is easily justified, and after the second video, my brain is even more stimulated and not thinking critically, and it becomes almost impossible to pry my eyes off youtube, and I end up squandering my entire afternoon.

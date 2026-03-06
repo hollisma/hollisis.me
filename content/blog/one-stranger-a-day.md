@@ -1,6 +1,7 @@
 ---
 title: One Stranger A Day
 date: '2025-07-21'
+tags: [story]
 ---
 
 I used to be terrified of class presentations. Of talking in groups bigger than three. Of interacting with people at all. In middle school, I would hold in the urge to go to the bathroom because it felt easier to tolerate the stomach pain than to raise my hand. In high school, I planned my promposal for weeks, only to avoid my date during the event, save for one awkward photo. In college, I decided it was time to change and devised a plan to overcome my fear of talking to people. 

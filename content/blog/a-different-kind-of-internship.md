@@ -1,6 +1,7 @@
 ---
 title: A Different Kind of Internship
 date: '2020-05-28'
+tags: [reflection]
 ---
 
 When interviewing for software engineering internships and asking what I'd be doing at the 

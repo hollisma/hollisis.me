@@ -1,6 +1,7 @@
 ---
 title: My Meditation Week
 date: '2025-07-17'
+tags: [reflection]
 ---
 
 I feel like I've known about meditation for forever now and have heard about its numerous mental and physical benefits and have even had multiple attempts at trying to make it a habit. I'd try meditating for 5 minutes in the morning or sit on my pillow and meditate before sleeping, but the habit would never stick. There would be the occasional session where I'd feel relaxed and be able to focus on my breath for a few uninterrupted minutes, but most sessions resulted in constant distraction and discomfort in my lower back and neck, and I'd just get annoyed and frustrated and stop. 

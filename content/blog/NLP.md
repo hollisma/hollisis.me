@@ -1,6 +1,7 @@
 ---
 title: NLP
 date: '2020-06-17'
+tags: [tech]
 ---
 For the past 4 days <a href="#fn1" class="footnote_small">[1]<span id="a1" class="anchor" /></a>, I've been going through the notes and video lectures of Stanford's NLP course. I covered all the content but it went by relatively quickly so I'm going to summarize on a high level what I learned. 
 

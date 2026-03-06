@@ -1,6 +1,7 @@
 ---
 title: How I'm Fighting My YouTube Addiction
 date: '2025-07-30'
+tags: [reflection, essay]
 ---
 
 I used to watch a lot of YouTube. First thing I did after coming home from high school was binge as many Overwatch videos as possible before my parents came home. Whenever I felt that dreaded need to read my college textbooks, I procrastinated with Hearthstone highlights. After a long day of work, I'd plop down and treat myself to a night of nuzlocke runs. Once I got injured and was on bedrest for half a year, I escaped with climbing and gaming videos for 10+ hours a day. 

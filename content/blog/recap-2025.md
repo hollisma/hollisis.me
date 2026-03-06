@@ -1,6 +1,7 @@
 ---
 title: Recap 2025
 date: '2026-01-09'
+tags: [reflection]
 ---
 
 The year 2025 will likely be remembered as when AI began dominating workplaces. When Trump took reign of the US government. When 67 was still a thing. 

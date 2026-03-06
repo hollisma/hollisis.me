@@ -11,6 +11,16 @@ const Section = styled(list_item.section)`
     box-shadow: ${({ theme }) => theme.shadows.lg};
   }
 `
+const CardHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+`
+const HeaderLeft = styled.div`
+  flex: 1;
+  min-width: 0;
+`
 const BlogLink = styled(Link)`
   font-size: 2em;
   font-weight: bold;
@@ -19,6 +29,25 @@ const BlogLink = styled(Link)`
   text-decoration: none;
 `
 const DateStr = styled.p``
+const MAX_VISIBLE_TAGS = 2
+
+const TagList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em;
+  flex-shrink: 1;
+  max-width: 35%;
+  min-width: 0;
+  justify-content: flex-end;
+`
+const Tag = styled.span`
+  font-size: 0.75em;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  background: ${({ theme }) => theme.colors.surface};
+  border: 2px solid ${({ theme }) => theme.colors.border};
+  color: ${({ theme }) => theme.colors.textMuted ?? theme.colors.text};
+`
 const Post = styled.p`
   margin-top: 0.75em;
   line-height: 1.5em;
@@ -34,6 +63,7 @@ type Data = {
         frontmatter: {
           title: string
           date: string
+          tags?: string[]
         }
         excerpt: string
       }
@@ -50,7 +80,7 @@ const Blog = ({ data, location }: PageProps<Data>) => {
       {posts &&
         posts.map(({ node }, i) => {
           const { fields, frontmatter, excerpt } = node
-          const { title, date } = frontmatter
+          const { title, date, tags } = frontmatter
 
           const dateObj = new Date(date + 'T00:00')
           const dateArr = dateObj.toString().split(' ')
@@ -62,10 +92,26 @@ const Blog = ({ data, location }: PageProps<Data>) => {
           const cleanPath = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname;
           return (
             <Section key={i}>
-              <BlogLink to={`${cleanPath}${fields!.slug}`}>
-                {title}
-              </BlogLink>
-              <DateStr>{dateStr}</DateStr>
+              <CardHeader>
+                <HeaderLeft>
+                  <BlogLink to={`${cleanPath}${fields!.slug}`}>
+                    {title}
+                  </BlogLink>
+                  <DateStr>{dateStr}</DateStr>
+                </HeaderLeft>
+                {tags && tags.length > 0 && (
+                  <TagList>
+                    {tags
+                      .slice(0, MAX_VISIBLE_TAGS)
+                      .map((tag, j) => (
+                        <Tag key={j}>{tag}</Tag>
+                      ))}
+                    {tags.length > MAX_VISIBLE_TAGS && (
+                      <Tag>+{tags.length - MAX_VISIBLE_TAGS}</Tag>
+                    )}
+                  </TagList>
+                )}
+              </CardHeader>
               <Post>{excerpt}</Post>
             </Section>
           )
@@ -90,6 +136,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
+            tags
           }
           excerpt(pruneLength: 200)
         }

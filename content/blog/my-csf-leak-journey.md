@@ -1,6 +1,7 @@
 ---
 title: My CSF Leak Journey
 date: '2025-08-08'
+tags: [reflection]
 ---
 
 Two years out of college, I wasn't technically a new grad anymore. But I still played table tennis at the office with anyone who was free. Still went out to meet people at the climbing gym. Still felt like I'd be young forever. 

@@ -2,6 +2,7 @@
 title: Wandering In Thought
 date: '2025-09-30'
 poem: true
+tags: [poetry]
 ---
 
 Wandering down unbeaten paths
