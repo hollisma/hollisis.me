@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import styled from 'styled-components'
 import { list_item } from '../styles'
 
 const Section = styled(list_item.section)`
+  cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   &:hover {
     transform: translateY(-8px);
@@ -20,12 +21,11 @@ const HeaderLeft = styled.div`
   flex: 1;
   min-width: 0;
 `
-const TitleLink = styled(Link)`
+const Title = styled.span`
   font-size: 2em;
   font-weight: bold;
   line-height: 1.5em;
   color: ${({ theme }) => theme.colors.text};
-  text-decoration: none;
 `
 const DateRow = styled.div`
   display: flex;
@@ -107,11 +107,29 @@ export function BlogSnippet({
   const visibleTags = showAllTags ? tags : tags.slice(0, maxVisibleTags)
   const overflowCount = showAllTags ? 0 : Math.max(0, tags.length - maxVisibleTags!)
 
+  const handleCardClick = (e: React.MouseEvent) => {
+    if ((e.target as HTMLElement).closest('a')) return
+    navigate(postUrl)
+  }
+  const handleCardKeyDown = (e: React.KeyboardEvent) => {
+    if ((e.target as HTMLElement).closest('a')) return
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      navigate(postUrl)
+    }
+  }
+
   return (
-    <Section>
+    <Section
+      onClick={handleCardClick}
+      onKeyDown={handleCardKeyDown}
+      role="link"
+      tabIndex={0}
+      aria-label={`Read ${title}`}
+    >
       <CardHeader>
         <HeaderLeft>
-          <TitleLink to={postUrl}>{title}</TitleLink>
+          <Title>{title}</Title>
           <DateRow>
             <DateStr>{dateStr}</DateStr>
             {readingTimeMinutes != null && readingTimeMinutes > 0 && (
