@@ -1,6 +1,7 @@
 import { DefaultTheme } from 'styled-components'
 
 export type ThemeShape = {
+  colorScheme?: 'light' | 'dark'
   colors: {
     background: string
     surface: string
@@ -8,6 +9,8 @@ export type ThemeShape = {
     muted: string
     accent: string
     border: string
+    /** Navbar translucent background */
+    navbarBg?: string
   }
   spacing: {
     xs: string
@@ -36,7 +39,8 @@ export type ThemeShape = {
   }
 }
 
-const Theme: ThemeShape = {
+export const lightTheme: ThemeShape = {
+  colorScheme: 'light',
   colors: {
     background: '#f4f5f7',
     surface: '#ffffff',
@@ -44,6 +48,7 @@ const Theme: ThemeShape = {
     muted: '#6b7280',
     accent: '#2563eb',
     border: '#e5e7eb',
+    navbarBg: 'rgba(255, 255, 255, 0.85)',
   },
   spacing: {
     xs: '4px',
@@ -72,4 +77,24 @@ const Theme: ThemeShape = {
   },
 }
 
+export const darkTheme: ThemeShape = {
+  ...lightTheme,
+  colorScheme: 'dark',
+  colors: {
+    background: '#0f172a',
+    surface: '#1e293b',
+    text: '#f1f5f9',
+    muted: '#94a3b8',
+    accent: '#60a5fa',
+    border: '#334155',
+    navbarBg: 'rgba(15, 23, 42, 0.9)',
+  },
+  shadows: {
+    sm: '0 1px 2px rgba(0,0,0,0.3)',
+    md: '0 4px 12px rgba(0,0,0,0.4)',
+    lg: '0 8px 24px rgba(0,0,0,0.5)',
+  },
+}
+
+const Theme = lightTheme
 export default Theme

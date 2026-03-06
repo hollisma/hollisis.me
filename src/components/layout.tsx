@@ -1,12 +1,8 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import { GlobalStyles, media, Theme } from '../styles'
+import { GlobalStyles, media } from '../styles'
+import { useTheme } from '../contexts/ThemeContext'
 import Navbar from './navbar'
-
-// ${media.tablet`
-// margin-top: 5em;
-// padding-top: 2em;
-// `}
 
 const Container = styled.div<{ size: string }>`
   width: auto;
@@ -24,10 +20,38 @@ const Container = styled.div<{ size: string }>`
   justify-self: center;
 `
 
+const ContentWrap = styled.div<{ $visible: boolean }>`
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+  transition: opacity 0.15s ease-out;
+`
+
 type LayoutProps = {
   children: React.ReactNode
   location: any
   size?: string
+}
+
+function LayoutInner({
+  children,
+  location,
+  size,
+}: {
+  children: React.ReactNode
+  location: any
+  size: string
+}) {
+  const { theme, resolved } = useTheme()
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <ContentWrap $visible={resolved}>
+        <Container size={size}>
+          <Navbar location={location} />
+          {children}
+        </Container>
+      </ContentWrap>
+    </ThemeProvider>
+  )
 }
 
 const Layout: React.FC<LayoutProps> = ({
@@ -36,13 +60,9 @@ const Layout: React.FC<LayoutProps> = ({
   size = 'small',
 }) => {
   return (
-    <ThemeProvider theme={Theme}>
-      <GlobalStyles />
-      <Container size={size}>
-        <Navbar location={location} />
-        {children}
-      </Container>
-    </ThemeProvider>
+    <LayoutInner location={location} size={size}>
+      {children}
+    </LayoutInner>
   )
 }
 

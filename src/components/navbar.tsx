@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
 import { navLinks } from '../config'
+import { ThemeToggle } from './ThemeToggle'
 
 const StyledLink = styled(Link)<{ current: string }>`
   display: flex;
@@ -37,7 +38,7 @@ const StyledLink = styled(Link)<{ current: string }>`
   p { margin: 0; }
 `
 
-const LinkContainer = styled.div<{ scrolled: boolean }>`
+const LinkContainer = styled.nav<{ scrolled: boolean }>`
   display: flex;
   position: fixed;
   top: 0;
@@ -45,7 +46,7 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
   height: ${props => (props.scrolled ? '56px' : '72px')};
   width: 100%;
   z-index: 10;
-  background: rgba(255, 255, 255, ${props => (props.scrolled ? 0.8 : 0.6)});
+  background: ${({ theme }) => theme.colors.navbarBg ?? theme.colors.surface};
   backdrop-filter: saturate(180%) blur(${props => (props.scrolled ? '10px' : '8px')});
   -webkit-backdrop-filter: saturate(180%) blur(${props => (props.scrolled ? '10px' : '8px')});
   border-bottom: ${props => (props.scrolled ? '1px' : '2px')} solid ${({ theme }) => theme.colors.border};
@@ -53,6 +54,13 @@ const LinkContainer = styled.div<{ scrolled: boolean }>`
   justify-content: center;
   transition: all 0.2s ease-out;
   font-weight: 600;
+`
+
+const ToggleWrap = styled.div`
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
 `
 
 const Navbar = ({ location }: any) => {
@@ -82,6 +90,9 @@ const Navbar = ({ location }: any) => {
           </StyledLink>
         )
       })}
+      <ToggleWrap>
+        <ThemeToggle />
+      </ToggleWrap>
     </LinkContainer>
   )
 }

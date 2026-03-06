@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    color-scheme: light;
+    color-scheme: ${({ theme }) => theme.colorScheme ?? 'light'};
   }
 
   html {
