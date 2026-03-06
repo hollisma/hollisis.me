@@ -27,7 +27,17 @@ const TitleLink = styled(Link)`
   color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
 `
-const DateStr = styled.p``
+const DateRow = styled.div`
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  flex-wrap: wrap;
+`
+const DateStr = styled.span``
+const ReadingTime = styled.span`
+  color: ${({ theme }) => theme.colors.muted ?? theme.colors.text};
+  font-size: 0.95em;
+`
 const TagList = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -71,9 +81,15 @@ export interface BlogSnippetProps {
   dateStr: string
   excerpt: string
   tags?: string[]
+  /** Reading time in minutes; shown to the right of the date when set. */
+  readingTimeMinutes?: number
   basePath?: string
   /** When set, show only this many tags + "+N" overflow. When undefined, show all tags. */
   maxVisibleTags?: number
+}
+
+function formatReadingTime(minutes: number): string {
+  return `${minutes} min read`
 }
 
 export function BlogSnippet({
@@ -82,6 +98,7 @@ export function BlogSnippet({
   dateStr,
   excerpt,
   tags = [],
+  readingTimeMinutes,
   basePath = '/blog',
   maxVisibleTags,
 }: BlogSnippetProps) {
@@ -95,7 +112,15 @@ export function BlogSnippet({
       <CardHeader>
         <HeaderLeft>
           <TitleLink to={postUrl}>{title}</TitleLink>
-          <DateStr>{dateStr}</DateStr>
+          <DateRow>
+            <DateStr>{dateStr}</DateStr>
+            {readingTimeMinutes != null && readingTimeMinutes > 0 && (
+              <>
+                <span aria-hidden>·</span>
+                <ReadingTime>{formatReadingTime(readingTimeMinutes)}</ReadingTime>
+              </>
+            )}
+          </DateRow>
         </HeaderLeft>
         {tags.length > 0 && (
           <TagList>

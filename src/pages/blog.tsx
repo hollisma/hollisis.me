@@ -9,6 +9,7 @@ type Data = {
         fields: { slug: string }
         frontmatter: { title: string; date: string; tags?: string[] }
         excerpt: string
+        timeToRead?: number
       }
     }[]
   }
@@ -29,7 +30,7 @@ const Blog = ({ data, location }: PageProps<Data>) => {
       <SEO title='Hollis Ma | Blog' />
       {posts &&
         posts.map(({ node }, i) => {
-          const { fields, frontmatter, excerpt } = node
+          const { fields, frontmatter, excerpt, timeToRead } = node
           const { title, date, tags } = frontmatter
           return (
             <BlogSnippet
@@ -39,6 +40,7 @@ const Blog = ({ data, location }: PageProps<Data>) => {
               dateStr={formatDate(date)}
               excerpt={excerpt}
               tags={tags}
+              readingTimeMinutes={timeToRead}
               basePath={basePath}
               maxVisibleTags={2}
             />
@@ -67,6 +69,7 @@ export const pageQuery = graphql`
             tags
           }
           excerpt(pruneLength: 200)
+          timeToRead
         }
       }
     }

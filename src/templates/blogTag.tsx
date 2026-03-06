@@ -27,6 +27,7 @@ type Data = {
         fields: { slug: string }
         frontmatter: { title: string; date: string; tags?: string[] }
         excerpt: string
+        timeToRead?: number
       }
     }[]
   }
@@ -53,7 +54,7 @@ const BlogTag = ({ data, pageContext, location }: PageProps<Data, PageContext>) 
       <TagHeading>Posts tagged "{tag}"</TagHeading>
       {posts &&
         posts.map(({ node }, i) => {
-          const { fields, frontmatter, excerpt } = node
+          const { fields, frontmatter, excerpt, timeToRead } = node
           const { title, date, tags } = frontmatter
           return (
             <BlogSnippet
@@ -63,6 +64,7 @@ const BlogTag = ({ data, pageContext, location }: PageProps<Data, PageContext>) 
               dateStr={formatDate(date)}
               excerpt={excerpt}
               tags={tags}
+              readingTimeMinutes={timeToRead}
               basePath="/blog"
               maxVisibleTags={undefined}
             />
@@ -94,6 +96,7 @@ export const pageQuery = graphql`
             tags
           }
           excerpt(pruneLength: 200)
+          timeToRead
         }
       }
     }

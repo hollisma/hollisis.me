@@ -17,11 +17,17 @@ const StyledDate = styled.h3`
   font-size: 1em;
   margin-top: 0.25em;
 `
+const ReadingTime = styled.p`
+  font-weight: 100;
+  font-size: 0.9em;
+  margin-top: 0.15em;
+  color: ${({ theme }) => theme.colors.muted ?? theme.colors.text};
+`
 const TagList = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 0.25em;
-  margin-top: 0.75em;
+  margin-top: 0.25em;
 `
 const Tag = styled(Link)`
   font-size: 0.75em;
@@ -158,18 +164,23 @@ interface Props extends PageRendererProps {
         tags?: string[]
       }
       html: string
+      timeToRead?: number
     }
   }
 }
 
 const Blog = ({ data, pageContext, location }: Props) => {
-  const { frontmatter, html } = data.markdownRemark!
+  const { frontmatter, html, timeToRead } = data.markdownRemark!
   const { title, date, poem, tags } = frontmatter!
   const { previous, next } = pageContext
 
   const dateObj = new Date(date + 'T00:00')
   const dateArr = dateObj.toString().split(' ')
   const dateStr = `${dateArr[1]} ${Number(dateArr[2])}, ${dateArr[3]}`
+  const readingTimeStr =
+    timeToRead != null && timeToRead > 0
+      ? `${timeToRead} min read`
+      : null
 
   return (
     <Layout location={location}>
@@ -177,6 +188,7 @@ const Blog = ({ data, pageContext, location }: Props) => {
       <Section>
         <Title>{title}</Title>
         <StyledDate>{dateStr}</StyledDate>
+        {readingTimeStr && <ReadingTime>{readingTimeStr}</ReadingTime>}
         {tags && tags.length > 0 && (
           <TagList>
             {tags.map((tag, i) => (
@@ -219,6 +231,7 @@ export const pageQuery = graphql`
         tags
       }
       html
+      timeToRead
     }
   }
 `
