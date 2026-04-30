@@ -54,12 +54,12 @@ Day one, complete. Only 29 more to go.
 
 The following weeks consisted of introducing myself to strangers in the dining hall food line and stretching my imagination to think of questions to ask to get my foot in the door of conversation. At first, it was still nerve-wrecking, but as the days went by, I realized how open most people are to chatting and how enjoyable the experience could be. 
 
-I' met some of my closest friends in college by what seemed like random encounters that were actually deliberate efforts for me to talk to strangers. I met Joe at a CS info session, Jerry in line for some orientation, and Ilya while waiting for an acai bowl study break. Without challenging myself to talk to strangers, these close friends would likely have remained strangers. 
+I met some of my closest friends in college by what seemed like random encounters that were actually deliberate efforts for me to talk to strangers. I met Joe at a CS info session, Jerry in line for some orientation, and Ilya while waiting for an acai bowl study break. Without challenging myself to talk to strangers, these close friends would likely have remained strangers. 
 
-Even the times when my attempts at conversation flopped, most people responded kindly and humored my conversation. There were times, though, when I'd say something and only get a nod or no response at all, and... well, the world didn't end. I realized that no one really cares about me in the way that my fearful mind thought, and it became somewhat liberating to be able to speak without this fear of judgement.
+Even the times when my attempts flopped, most people responded kindly and humored my conversation. There were times, though, when I'd say something and only get a nod or no response at all, and... well, the world didn't end. I realized that no one really cares about me in the way that my fearful mind thought, and it became somewhat liberating to be able to speak without this fear of judgement.
 
 ## Afterwards
 
-I never ended up finishing the full 30 days. After day 15 or 20, I got busy and started skipping days. But for the rest of college and till this current day, I still seek out opportunities to meet new people and develop close friendships from a simple "Hey, how's it going."
+I never ended up finishing the full 30 days. After day 15 or 20, I got busy and started skipping days. But for the rest of college and till this current day, I still seek out opportunities to meet new people and forge connections from a simple "Hey, how's it going?"
 
 I've never fully gotten over the anxiety of being the first to speak, but I've learned that it almost always goes well, and even when it doesn't, that's fine. A stranger remains a stranger. But if it goes well, I might make a lifelong friend, and continue to prove to myself that I can overcome my greatest fears. 

@@ -45,7 +45,7 @@ const Tag = styled(Link)`
 `
 const Post = styled.div<{ isPoem?: boolean }>`
   margin-top: 0.25em;
-  font-size: 1.15em;
+  font-size: 1em;
   list-style-position: inside;
   line-height: 1.75em;
   p {
