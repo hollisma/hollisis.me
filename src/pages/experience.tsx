@@ -8,6 +8,9 @@ import { list_item } from '../styles'
 const Section = styled(list_item.section)`
   margin-bottom: 1.5em;
   padding: 2em 2.5em 1em;
+  @media (max-width: 40em) {
+    padding: 1.25em 1rem 1rem;
+  }
 `
 const Title = list_item.title
 const UnderTitle = styled(list_item.under_title)`
@@ -19,6 +22,9 @@ const Description = styled(Prose)`
 
 const CompanyTech = styled(list_item.flex_row_container)`
   width: 33em;
+  @media (max-width: 40em) {
+    width: auto;
+  }
 `
 const Subtitle = list_item.left_item
 const Tech = list_item.right_item
@@ -53,6 +59,12 @@ const Resume = styled.a`
   &:hover {
     transform: translateY(-5px);
     box-shadow: ${({ theme }) => theme.shadows.md};
+  }
+  @media (max-width: 40em) {
+    float: none;
+    right: 0;
+    display: inline-block;
+    margin-bottom: 1.5em;
   }
 `
 

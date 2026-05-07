@@ -14,6 +14,9 @@ const Subject = styled.div`
 const Section = styled(list_item.section)`
   margin-bottom: 1.5em;
   padding: 2em 2.5em 1em;
+  @media (max-width: 40em) {
+    padding: 1.25em 1rem 1rem;
+  }
 `
 const Title = list_item.title
 

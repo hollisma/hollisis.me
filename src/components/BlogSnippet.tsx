@@ -26,6 +26,9 @@ const Title = styled.span`
   font-weight: bold;
   line-height: 1.5em;
   color: ${({ theme }) => theme.colors.text};
+  @media (max-width: 40em) {
+    font-size: 1.5em;
+  }
 `
 const DateRow = styled.div`
   display: flex;
@@ -46,6 +49,10 @@ const TagList = styled.div`
   max-width: 35%;
   min-width: 0;
   justify-content: flex-end;
+  @media (max-width: 40em) {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
 `
 const tagBaseStyles = `
   font-size: 0.75em;

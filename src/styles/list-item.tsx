@@ -18,9 +18,18 @@ const list_item = {
       margin: 0;
       padding: 0;
     }
+    @media (max-width: 40em) {
+      width: auto;
+      padding: 1.25em 1rem;
+      border-radius: 1.25em;
+      margin-bottom: 1.5em;
+    }
   `,
   title: styled.h1`
     font-size: 2em;
+    @media (max-width: 40em) {
+      font-size: 1.5em;
+    }
   `,
   under_title: styled.div`
     display: flex;
@@ -28,6 +37,11 @@ const list_item = {
     padding: 0.15rem 0 0.75rem;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 40em) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem;
+    }
   `,
   description: styled.p`
     list-style-position: inside;

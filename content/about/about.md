@@ -4,13 +4,17 @@ For the past 3 years, I was working at Meta on [smart glasses](https://www.meta.
 
 ![Hollis Ma in NYC](/hollis_nyc.JPG " ")
 
-What I'm currently working on as of October '25:
+What I'm currently working on as of May '26: 
+- Getting back into shape after a [year of bedrest](/blog/my-csf-leak-journey/)
+- 
+
+<!-- What I'm currently working on as of October '25:
 - Recovering from a [CSF leak](/blog/my-csf-leak-journey/)
 - Exploring game development and doing [game jams](https://masiloh.itch.io/)!
 - Updating this site
 - Getting back into running and working out
 - Playing guitar
-- Working my way through my gaming backlog
+- Working my way through my gaming backlog -->
 
 <!-- - Learning Japanese -->
 <!-- - Learning about computer vision, business, philosophy of mind, sociology of the internet, and NLP in school -->

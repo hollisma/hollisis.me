@@ -16,6 +16,9 @@ const Container = styled.div<{ size: string }>`
   ${media(900)`
     margin-top: 4.5em;
   `}
+  ${media(640)`
+    margin-top: 5.5em;
+  `}
   padding: 0 5vw 3em;
   justify-self: center;
 `

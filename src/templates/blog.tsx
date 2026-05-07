@@ -11,6 +11,9 @@ const Title = styled.h1`
   font-size: 2.5em;
   font-family: Montserrat;
   font-weight: 1000;
+  @media (max-width: 40em) {
+    font-size: 1.75em;
+  }
 `
 const StyledDate = styled.h3`
   font-weight: 100;
@@ -101,6 +104,10 @@ const LinkSection = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1em;
+  @media (max-width: 40em) {
+    flex-direction: column;
+  }
 `
 const StyledLink = styled(Link)`
   background: #ccf;

@@ -19,6 +19,9 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 1.75;
+    @media (max-width: 40em) {
+      font-size: 16px;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
