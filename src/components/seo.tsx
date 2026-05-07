@@ -20,22 +20,20 @@ type SEOProps = {
 }
 
 const SEO: React.FC<SEOProps> = props => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            url
-            image
-            keywords
-          }
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          url
+          image
+          keywords
         }
       }
-    `
-  )
+    }
+  `)
 
   const {
     title,

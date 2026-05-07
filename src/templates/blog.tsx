@@ -40,7 +40,9 @@ const Tag = styled(Link)`
   border: 2px solid ${({ theme }) => theme.colors.border};
   color: ${({ theme }) => theme.colors.muted ?? theme.colors.text};
   text-decoration: none;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
   &:hover {
     background: ${({ theme }) => theme.colors.border};
     border-color: ${({ theme }) => theme.colors.text};
@@ -54,16 +56,18 @@ const Post = styled.div<{ isPoem?: boolean }>`
   p {
     margin: 1.5em 0;
   }
-  ${props => props.isPoem && css`
-    line-height: 1.6em;
-    p {
-      white-space: pre-line;
-      margin: 0 0 1.25em 0;
-    }
-    p:first-of-type {
-      margin-top: 1.5em;
-    }
-  `}
+  ${props =>
+    props.isPoem &&
+    css`
+      line-height: 1.6em;
+      p {
+        white-space: pre-line;
+        margin: 0 0 1.25em 0;
+      }
+      p:first-of-type {
+        margin-top: 1.5em;
+      }
+    `}
   p a.footnote_small {
     color: green;
     position: relative;
@@ -90,14 +94,15 @@ const Post = styled.div<{ isPoem?: boolean }>`
     text-align: center;
     font-size: 0.75em;
   }
-  h1, h2 {
+  h1,
+  h2 {
     margin: 1.5em 0 0.75em 0;
   }
   h1 + h2 {
     margin-top: 0.5em;
   }
   h2:has(+ h5) {
-    margin-bottom: 0.0em;
+    margin-bottom: 0em;
   }
 `
 const LinkSection = styled.div`
@@ -117,7 +122,9 @@ const StyledLink = styled(Link)`
   box-shadow: ${({ theme }) => theme.shadows.sm};
   padding: 1em 2em;
   border-radius: 1em;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
   &:hover {
     transform: translateY(-8px);
     box-shadow: ${({ theme }) => theme.shadows.lg};
@@ -186,9 +193,7 @@ const Blog = ({ data, pageContext, location }: Props) => {
   const dateArr = dateObj.toString().split(' ')
   const dateStr = `${dateArr[1]} ${Number(dateArr[2])}, ${dateArr[3]}`
   const readingTimeStr =
-    timeToRead != null && timeToRead > 0
-      ? `${timeToRead} min read`
-      : null
+    timeToRead != null && timeToRead > 0 ? `${timeToRead} min read` : null
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
@@ -245,7 +250,7 @@ const Blog = ({ data, pageContext, location }: Props) => {
 export default Blog
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug

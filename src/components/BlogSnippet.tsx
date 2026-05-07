@@ -5,7 +5,9 @@ import { list_item } from '../styles'
 
 const Section = styled(list_item.section)`
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
   &:hover {
     transform: translateY(-8px);
     box-shadow: ${({ theme }) => theme.shadows.lg};
@@ -112,7 +114,9 @@ export function BlogSnippet({
   const postUrl = `${basePath.replace(/\/$/, '')}${slug}`
   const showAllTags = maxVisibleTags == null
   const visibleTags = showAllTags ? tags : tags.slice(0, maxVisibleTags)
-  const overflowCount = showAllTags ? 0 : Math.max(0, tags.length - maxVisibleTags!)
+  const overflowCount = showAllTags
+    ? 0
+    : Math.max(0, tags.length - maxVisibleTags!)
 
   const handleCardClick = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest('a')) return
@@ -130,7 +134,7 @@ export function BlogSnippet({
     <Section
       onClick={handleCardClick}
       onKeyDown={handleCardKeyDown}
-      role="link"
+      role='link'
       tabIndex={0}
       aria-label={`Read ${title}`}
     >
@@ -142,7 +146,9 @@ export function BlogSnippet({
             {readingTimeMinutes != null && readingTimeMinutes > 0 && (
               <>
                 <span aria-hidden>·</span>
-                <ReadingTime>{formatReadingTime(readingTimeMinutes)}</ReadingTime>
+                <ReadingTime>
+                  {formatReadingTime(readingTimeMinutes)}
+                </ReadingTime>
               </>
             )}
           </DateRow>

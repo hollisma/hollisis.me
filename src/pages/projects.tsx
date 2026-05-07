@@ -114,11 +114,16 @@ const Projects = ({ data, location }: PageProps<Data>) => {
       {edges &&
         edges.map(({ node }, i) => {
           const { frontmatter, html } = node
-          const { title, description, github, external, tech, date, images } = frontmatter
+          const { title, description, github, external, tech, date, images } =
+            frontmatter
 
           const matchedImages = images
             ? images
-                .map((filename: string) => imageFiles.find(({ node: f }: ScreenshotNode) => f.base === filename))
+                .map((filename: string) =>
+                  imageFiles.find(
+                    ({ node: f }: ScreenshotNode) => f.base === filename
+                  )
+                )
                 .filter((f): f is ScreenshotNode => f !== undefined)
             : []
 
@@ -161,7 +166,13 @@ const Projects = ({ data, location }: PageProps<Data>) => {
                   {matchedImages.map(({ node: f }) => (
                     <div
                       key={f.base}
-                      style={{ flex: '0 0 auto', height: 200, width: 320, borderRadius: '0.5rem', overflow: 'hidden' }}
+                      style={{
+                        flex: '0 0 auto',
+                        height: 200,
+                        width: 320,
+                        borderRadius: '0.5rem',
+                        overflow: 'hidden',
+                      }}
                     >
                       <Img
                         fluid={f.childImageSharp.fluid}
