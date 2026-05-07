@@ -62,6 +62,21 @@ const StyledLink = styled(Link)`
   &:hover { text-decoration: underline; }
 `
 
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Hollis Ma',
+  url: 'https://hollisis.me',
+  sameAs: [
+    'https://github.com/hollisma',
+    'https://www.linkedin.com/in/hollis-ma/',
+  ],
+  alumniOf: {
+    '@type': 'CollegeOrUniversity',
+    name: 'Princeton University',
+  },
+}
+
 const HomePage = ({ data, location }: PageProps<Data>) => {
   const { site, allMarkdownRemark } = data!
   const { description } = site.siteMetadata
@@ -69,7 +84,7 @@ const HomePage = ({ data, location }: PageProps<Data>) => {
 
   return (
     <NoBottomPaddingLayout location={location}>
-      <SEO title='Hollis Ma' />
+      <SEO title='Hollis Ma' pathname={location.pathname} jsonLd={personJsonLd} />
       <Header>Hi there! I'm Hollis...</Header>
       {/* <Header>{description} :)</Header> */}
       <About dangerouslySetInnerHTML={{ __html: html }} />

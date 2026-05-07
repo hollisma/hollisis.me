@@ -138,7 +138,7 @@ const Education = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location}>
-      <SEO title='Hollis Ma | Education' />
+      <SEO title='Hollis Ma | Education' pathname={location.pathname} />
       <div dangerouslySetInnerHTML={{ __html: blurb_edges![0].node.html }} />
       {sectionElems}
     </Layout>

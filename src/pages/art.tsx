@@ -29,7 +29,7 @@ const Blog = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} size='large'>
-      <SEO title='Hollis Ma | Art' />
+      <SEO title='Hollis Ma | Art' pathname={location.pathname} />
       {images.map(({ node }) => {
         const { id, name, childImageSharp } = node
 

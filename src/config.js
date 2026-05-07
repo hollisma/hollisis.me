@@ -1,16 +1,15 @@
 module.exports = {
-  siteTitle: `hollis-ma-personal-website`,
-  siteDescription: 'Personal website for Hollis Ma',
+  siteTitle: `Hollis Ma`,
+  siteDescription: `Personal website of Hollis Ma — software engineer, Princeton CS alum, and former Meta engineer. Writing about tech, travel, and life.`,
   siteAuthor: `@hollisma`,
-  siteUrl: ``,
+  siteUrl: `https://hollisis.me`,
   siteKeywords: [
     'Hollis Ma',
-    'student',
-    'princeton',
-    'gatsby',
-    'typescript',
-    'javascript',
-    'react',
+    'Hollis Ma software engineer',
+    'Hollis Ma Meta',
+    'Hollis Ma Princeton',
+    'personal website',
+    'blog',
   ],
   socialMedia: [
     {
@@ -28,16 +27,16 @@ module.exports = {
       url: '/',
     },
     {
-      name: 'Experience',
-      url: '/experience',
+      name: 'Blog',
+      url: '/blog',
     },
     {
       name: 'Projects',
       url: '/projects',
     },
     {
-      name: 'Blog',
-      url: '/blog',
+      name: 'Experience',
+      url: '/experience',
     },
     {
       name: 'Education',

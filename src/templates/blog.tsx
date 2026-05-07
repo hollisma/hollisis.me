@@ -171,13 +171,14 @@ interface Props extends PageRendererProps {
         tags?: string[]
       }
       html: string
+      excerpt: string
       timeToRead?: number
     }
   }
 }
 
 const Blog = ({ data, pageContext, location }: Props) => {
-  const { frontmatter, html, timeToRead } = data.markdownRemark!
+  const { frontmatter, html, excerpt, timeToRead } = data.markdownRemark!
   const { title, date, poem, tags } = frontmatter!
   const { previous, next } = pageContext
 
@@ -189,9 +190,27 @@ const Blog = ({ data, pageContext, location }: Props) => {
       ? `${timeToRead} min read`
       : null
 
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    datePublished: date,
+    author: {
+      '@type': 'Person',
+      name: 'Hollis Ma',
+      url: 'https://hollisis.me',
+    },
+  }
+
   return (
     <Layout location={location}>
-      <SEO title='Blog' />
+      <SEO
+        title={`${title} | Hollis Ma`}
+        description={excerpt}
+        pathname={location.pathname}
+        ogType='article'
+        jsonLd={articleJsonLd}
+      />
       <Section>
         <Title>{title}</Title>
         <StyledDate>{dateStr}</StyledDate>
@@ -237,6 +256,7 @@ export const pageQuery = graphql`
         poem
         tags
       }
+      excerpt(pruneLength: 250)
       html
       timeToRead
     }

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hollisis.me/sitemap-index.xml

@@ -49,7 +49,7 @@ const BlogTag = ({ data, pageContext, location }: PageProps<Data, PageContext>) 
 
   return (
     <Layout location={location}>
-      <SEO title={`Posts tagged "${tag}" | Hollis Ma Blog`} />
+      <SEO title={`Posts tagged "${tag}" | Hollis Ma Blog`} pathname={location.pathname} />
       <BackLink to="/blog">← All posts</BackLink>
       <TagHeading>Posts tagged "{tag}"</TagHeading>
       {posts &&

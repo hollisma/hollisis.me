@@ -119,7 +119,7 @@ const Experience = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location}>
-      <SEO title='Hollis Ma | Experience' />
+      <SEO title='Hollis Ma | Experience' pathname={location.pathname} />
       <Resume
         href='/Resume.pdf'
         target='_blank'

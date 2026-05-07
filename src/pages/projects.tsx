@@ -79,7 +79,7 @@ const Projects = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location}>
-      <SEO title='Hollis Ma | Projects' />
+      <SEO title='Hollis Ma | Projects' pathname={location.pathname} />
       {edges &&
         edges.map(({ node }, i) => {
           const { frontmatter, html } = node

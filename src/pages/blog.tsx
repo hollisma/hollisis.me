@@ -27,7 +27,7 @@ const Blog = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location}>
-      <SEO title='Hollis Ma | Blog' />
+      <SEO title='Hollis Ma | Blog' pathname={location.pathname} />
       {posts &&
         posts.map(({ node }, i) => {
           const { fields, frontmatter, excerpt, timeToRead } = node
