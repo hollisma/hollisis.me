@@ -1,6 +1,7 @@
 ---
 title: Bed Rested
 description: Game
+github: https://github.com/hollisma/Bed-Rested
 external: https://masiloh.itch.io/bed-rested
 tech: Godot, Aseprite
 date: Oct '25

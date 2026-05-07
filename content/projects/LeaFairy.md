@@ -1,6 +1,7 @@
 ---
 title: LeaFairy
 description: Game
+github: 'https://github.com/hollisma/LeaFairy'
 external: https://masiloh.itch.io/leafairy
 tech: Godot, Aseprite
 date: Nov '25

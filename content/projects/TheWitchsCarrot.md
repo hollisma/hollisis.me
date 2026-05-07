@@ -1,6 +1,7 @@
 ---
 title: The Witch's Carrot
 description: Game
+github: https://github.com/hollisma/The-Witchs-Carrot
 external: https://masiloh.itch.io/the-witchs-carrot
 tech: Godot, Aseprite
 date: Oct '25
