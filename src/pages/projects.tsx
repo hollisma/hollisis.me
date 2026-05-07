@@ -6,7 +6,7 @@ import { Layout, SEO, Icon } from '../components'
 import list_item from '../styles/list-item'
 
 const Section = styled(list_item.section)`
-  margin-bottom: 1.5em;
+  margin-bottom: 3em;
   padding: 2em 2.5em 1em;
   @media (max-width: 40em) {
     padding: 1.25em 1rem 1rem;
@@ -40,6 +40,7 @@ const Links = styled.div`
 `
 const IconLink = styled.a`
   padding: 0px 5px;
+  color: ${({ theme }) => theme.colors.text};
   svg {
     width: 20px;
     height: 20px;
