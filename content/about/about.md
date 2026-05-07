@@ -1,12 +1,15 @@
 ...and I like programming, gaming, and learning new things. 
 
-For the past 3 years, I was working at Meta on [smart glasses](https://www.meta.com/ai-glasses/meta-ray-ban-display/), and previously studied CS at Princeton. Now, I'm taking a break to explore my own projects and learning. You can reach me at hollisleroyma at gmail dot com. 
+For 3 years, I was working at Meta on [smart glasses](https://www.meta.com/ai-glasses/meta-ray-ban-display/), and previously studied CS at Princeton. Now, I'm taking a break to explore my own projects and learning. You can reach me at hollisleroyma at gmail dot com. 
 
 ![Hollis Ma in NYC](/hollis_nyc.JPG " ")
 
 What I'm currently working on as of May '26: 
 - Getting back into shape after a [year of bedrest](/blog/my-csf-leak-journey/)
-- 
+- [Traveling](/blog/my-amtrak-trip) a bunch
+- Working on random YouTube / coding projects
+- Grinding Anki and practicing Japanese
+- Finally hitting Masters in Overwatch
 
 <!-- What I'm currently working on as of October '25:
 - Recovering from a [CSF leak](/blog/my-csf-leak-journey/)
