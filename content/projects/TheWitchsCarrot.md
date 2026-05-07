@@ -4,6 +4,7 @@ description: Game
 external: https://masiloh.itch.io/the-witchs-carrot
 tech: Godot, Aseprite
 date: Oct '25
+images: ['witchs-carrot-w1.png', 'witchs-carrot-w3.png', 'witchs-carrot-w5.png', 'witchs-carrot-spire.png']
 order: 7
 ---
 

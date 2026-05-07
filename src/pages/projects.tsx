@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
+import Img, { FluidObject } from 'gatsby-image'
 import styled from 'styled-components'
 import Prose from '../styles/prose'
 import { Layout, SEO, Icon } from '../components'
@@ -24,7 +25,23 @@ const Title = list_item.title
 const UnderTitle = styled(list_item.under_title)`
   padding-bottom: 0em;
 `
-const Description = styled(Prose)``
+const Description = styled(Prose)`
+  iframe {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+  }
+`
+
+const ProjectGallery = styled.div`
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  justify-content: safe center;
+`
 
 const QuickInfo = list_item.flex_row_container
 const MiniDescription = list_item.left_item
@@ -53,6 +70,15 @@ const Date = styled.h3`
   padding-bottom: 20px;
 `
 
+type ScreenshotNode = {
+  node: {
+    base: string
+    childImageSharp: {
+      fluid: FluidObject
+    }
+  }
+}
+
 type Data = {
   allMarkdownRemark: {
     edges: {
@@ -67,15 +93,20 @@ type Data = {
           external: string
           tech: string
           date: string
+          images?: string[]
         }
         html: string
       }
     }[]
   }
+  imageFiles: {
+    edges: ScreenshotNode[]
+  }
 }
 
 const Projects = ({ data, location }: PageProps<Data>) => {
   const { edges } = data.allMarkdownRemark
+  const imageFiles = data.imageFiles?.edges ?? []
 
   return (
     <Layout location={location}>
@@ -83,7 +114,13 @@ const Projects = ({ data, location }: PageProps<Data>) => {
       {edges &&
         edges.map(({ node }, i) => {
           const { frontmatter, html } = node
-          const { title, description, github, external, tech, date } = frontmatter
+          const { title, description, github, external, tech, date, images } = frontmatter
+
+          const matchedImages = images
+            ? images
+                .map((filename: string) => imageFiles.find(({ node: f }: ScreenshotNode) => f.base === filename))
+                .filter((f): f is ScreenshotNode => f !== undefined)
+            : []
 
           return (
             <Section key={i}>
@@ -119,6 +156,23 @@ const Projects = ({ data, location }: PageProps<Data>) => {
                 <Date>{date}</Date>
               </UnderTitle>
               <Description dangerouslySetInnerHTML={{ __html: html }} />
+              {matchedImages.length > 0 && (
+                <ProjectGallery>
+                  {matchedImages.map(({ node: f }) => (
+                    <div
+                      key={f.base}
+                      style={{ flex: '0 0 auto', height: 200, width: 320, borderRadius: '0.5rem', overflow: 'hidden' }}
+                    >
+                      <Img
+                        fluid={f.childImageSharp.fluid}
+                        alt={f.base.replace(/\.[^.]+$/, '').replace(/-/g, ' ')}
+                        style={{ height: '100%' }}
+                        imgStyle={{ objectFit: 'cover' }}
+                      />
+                    </div>
+                  ))}
+                </ProjectGallery>
+              )}
             </Section>
           )
         })}
@@ -143,8 +197,26 @@ export const pageQuery = graphql`
             external
             tech
             date
+            images
           }
           html
+        }
+      }
+    }
+    imageFiles: allFile(
+      filter: {
+        relativeDirectory: { eq: "images" }
+        extension: { regex: "/(jpg|jpeg|png|gif|webp)/" }
+      }
+    ) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            fluid(maxHeight: 320) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }

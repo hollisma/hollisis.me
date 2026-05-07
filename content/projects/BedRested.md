@@ -4,6 +4,7 @@ description: Game
 external: https://masiloh.itch.io/bed-rested
 tech: Godot, Aseprite
 date: Oct '25
+images: ['bedrested-title.png', 'bedrested-hallway.png', 'bedrested-day-end.png']
 order: 6
 ---
 

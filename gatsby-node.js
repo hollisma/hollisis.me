@@ -76,6 +76,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type MarkdownRemarkFrontmatter {
+      images: [String]
+    }
+  `)
+}
+
 // Fix dev-404-page resolution from virtual fs (avoids "Can't resolve dev-404-page.js" on develop)
 exports.onCreateWebpackConfig = ({ actions }) => {
   const dev404Path = path.join(__dirname, '.cache', 'dev-404-page.js')
