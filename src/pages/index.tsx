@@ -59,7 +59,9 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.accent};
   font-weight: 600;
-  &:hover { text-decoration: underline; }
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const personJsonLd = {
@@ -84,7 +86,11 @@ const HomePage = ({ data, location }: PageProps<Data>) => {
 
   return (
     <NoBottomPaddingLayout location={location}>
-      <SEO title='Hollis Ma' pathname={location.pathname} jsonLd={personJsonLd} />
+      <SEO
+        title='Hollis Ma'
+        pathname={location.pathname}
+        jsonLd={personJsonLd}
+      />
       <Header>Hi there! I'm Hollis...</Header>
       {/* <Header>{description} :)</Header> */}
       <About dangerouslySetInnerHTML={{ __html: html }} />

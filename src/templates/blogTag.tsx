@@ -43,14 +43,21 @@ function formatDate(date: string): string {
   return `${dateArr[1]} ${Number(dateArr[2])}, ${dateArr[3]}`
 }
 
-const BlogTag = ({ data, pageContext, location }: PageProps<Data, PageContext>) => {
+const BlogTag = ({
+  data,
+  pageContext,
+  location,
+}: PageProps<Data, PageContext>) => {
   const { posts } = data.postsQuery
   const { tag } = pageContext
 
   return (
     <Layout location={location}>
-      <SEO title={`Posts tagged "${tag}" | Hollis Ma Blog`} pathname={location.pathname} />
-      <BackLink to="/blog">← All posts</BackLink>
+      <SEO
+        title={`Posts tagged "${tag}" | Hollis Ma Blog`}
+        pathname={location.pathname}
+      />
+      <BackLink to='/blog'>← All posts</BackLink>
       <TagHeading>Posts tagged "{tag}"</TagHeading>
       {posts &&
         posts.map(({ node }, i) => {
@@ -65,7 +72,7 @@ const BlogTag = ({ data, pageContext, location }: PageProps<Data, PageContext>) 
               excerpt={excerpt}
               tags={tags}
               readingTimeMinutes={timeToRead}
-              basePath="/blog"
+              basePath='/blog'
               maxVisibleTags={undefined}
             />
           )
@@ -77,7 +84,7 @@ const BlogTag = ({ data, pageContext, location }: PageProps<Data, PageContext>) 
 export default BlogTag
 
 export const pageQuery = graphql`
-  query($tag: String!) {
+  query ($tag: String!) {
     postsQuery: allMarkdownRemark(
       filter: {
         fileAbsolutePath: { regex: "/blog/" }

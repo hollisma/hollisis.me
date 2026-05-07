@@ -1,4 +1,11 @@
-import React, { createContext, useContext, useState, useEffect, useLayoutEffect, useMemo } from 'react'
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+} from 'react'
 import { lightTheme, darkTheme } from '../styles/theme'
 import type { ThemeShape } from '../styles/theme'
 
@@ -62,7 +69,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       theme: mode === 'dark' ? darkTheme : lightTheme,
       resolved,
       setMode: setModeState,
-      toggleTheme: () => setModeState((m) => (m === 'light' ? 'dark' : 'light')),
+      toggleTheme: () => setModeState(m => (m === 'light' ? 'dark' : 'light')),
     }),
     [mode, resolved]
   )

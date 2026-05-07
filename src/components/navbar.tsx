@@ -13,7 +13,9 @@ const StyledLink = styled(Link)<{ current: string }>`
   font-size: 1em;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.text};
-  transition: color 0.15s ease, opacity 0.2s ease;
+  transition:
+    color 0.15s ease,
+    opacity 0.2s ease;
   background: transparent;
   ${props =>
     props.current === 'true'
@@ -35,7 +37,9 @@ const StyledLink = styled(Link)<{ current: string }>`
             opacity: 0.6;
           }
         `}
-  p { margin: 0; }
+  p {
+    margin: 0;
+  }
 `
 
 const LinkContainer = styled.nav<{ scrolled: boolean }>`
@@ -47,9 +51,12 @@ const LinkContainer = styled.nav<{ scrolled: boolean }>`
   width: 100%;
   z-index: 10;
   background: ${({ theme }) => theme.colors.navbarBg ?? theme.colors.surface};
-  backdrop-filter: saturate(180%) blur(${props => (props.scrolled ? '10px' : '8px')});
-  -webkit-backdrop-filter: saturate(180%) blur(${props => (props.scrolled ? '10px' : '8px')});
-  border-bottom: ${props => (props.scrolled ? '1px' : '2px')} solid ${({ theme }) => theme.colors.border};
+  backdrop-filter: saturate(180%)
+    blur(${props => (props.scrolled ? '10px' : '8px')});
+  -webkit-backdrop-filter: saturate(180%)
+    blur(${props => (props.scrolled ? '10px' : '8px')});
+  border-bottom: ${props => (props.scrolled ? '1px' : '2px')} solid
+    ${({ theme }) => theme.colors.border};
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-out;
@@ -101,7 +108,10 @@ const MobileMenu = styled.div<{ open: boolean; scrolled: boolean }>`
     opacity: ${({ open }) => (open ? 1 : 0)};
     transform: translateY(${({ open }) => (open ? '0' : '-10px')});
     pointer-events: ${({ open }) => (open ? 'auto' : 'none')};
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out, top 0.2s ease-out;
+    transition:
+      opacity 0.2s ease-out,
+      transform 0.2s ease-out,
+      top 0.2s ease-out;
   }
 `
 
@@ -147,7 +157,7 @@ const Navbar = ({ location }: any) => {
       <LinkContainer scrolled={scrolled}>
         <HamburgerBtn
           onClick={() => setMenuOpen(o => !o)}
-          aria-label="Toggle menu"
+          aria-label='Toggle menu'
           aria-expanded={menuOpen}
         >
           {menuOpen ? '✕' : '☰'}

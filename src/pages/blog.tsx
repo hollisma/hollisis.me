@@ -23,7 +23,9 @@ function formatDate(date: string): string {
 
 const Blog = ({ data, location }: PageProps<Data>) => {
   const { posts } = data.postsQuery
-  const basePath = location.pathname.endsWith('/') ? location.pathname.slice(0, -1) : location.pathname
+  const basePath = location.pathname.endsWith('/')
+    ? location.pathname.slice(0, -1)
+    : location.pathname
 
   return (
     <Layout location={location}>

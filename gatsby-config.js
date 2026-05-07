@@ -6,6 +6,7 @@ module.exports = {
     description: config.siteDescription,
     author: config.siteAuthor,
     url: config.siteUrl,
+    siteUrl: config.siteUrl,
     image: `${config.siteUrl}/icons/icon.png`,
     keywords: config.siteKeywords,
   },
