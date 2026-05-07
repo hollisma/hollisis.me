@@ -1,5 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { GlobalStyles, media } from '../styles'
 import { useTheme } from '../contexts/ThemeContext'
 import Navbar from './navbar'
@@ -47,6 +49,8 @@ function LayoutInner({
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
+      <Analytics />
+      <SpeedInsights />
       <ContentWrap $visible={resolved}>
         <Container size={size}>
           <Navbar location={location} />
