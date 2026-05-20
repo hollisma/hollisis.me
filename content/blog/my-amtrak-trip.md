@@ -4,7 +4,7 @@ date: '2026-05-02'
 tags: [reflection]
 ---
 
-This blog post contains my reflections and learnings from my month-long Amtrak trip. For more on what I actually DID during the trip, check out [the vlog on YouTube]() (WIP)
+This blog post contains my reflections and learnings from my month-long Amtrak trip. For more on what I actually DID during the trip, check out [the vlog on YouTube](https://youtu.be/-7omBsuJeHs?si=W8bpdazUxdkEa8_t)
 
 ## Intro
 
